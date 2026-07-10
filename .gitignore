@@ -1,2 +1,16 @@
 .env
-__pycache__
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# docker
+docker-compose.override.yml
+
+# editor
+.vscode/
+.idea/
+
+# data artifacts that should not be committed
+data/raw/
+data/processed/

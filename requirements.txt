@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+langchain-google-genai
+langchain-community
+langchain-core
+langgraph
+faiss-cpu
+python-dotenv
+pypdf

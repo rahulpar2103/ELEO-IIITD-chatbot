@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+README.md
+be_full.txt
+tests/
+chatbot/
+# raw source data, not needed at runtime
+data/raw/
+data/processed/
+ingestion/

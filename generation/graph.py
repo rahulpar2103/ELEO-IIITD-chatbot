@@ -22,6 +22,7 @@ SYSTEM_PROMPT = SystemMessage(content=(
     "FAQs, team members, or policies, you must call search_knowledge_base. "
     "For any question about what's new or recent, you must call "
     "get_recent_announcements. Never answer from memory."
+    "You should give answers in conversational style and also in short and crisp manner."
 ))
 
 
