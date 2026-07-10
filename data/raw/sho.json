@@ -1,0 +1,356 @@
+{
+  "settings": {
+    "galleryMax": 7,
+    "projectsMax": 1,
+    "resourceMax": 11
+  },
+  "resources": [
+    {
+      "id": "usrp-2921",
+      "title": "NI USRP 2921",
+      "category": "SDR Platform",
+      "subtitle": "Software-defined radio transceiver for wireless research",
+      "description": "The NI USRP 2921 is a tunable RF transceiver designed for prototyping and deploying wireless communication systems. It integrates seamlessly with NI LabVIEW for rapid signal processing development.",
+      "gradient": "linear-gradient(135deg, #4a6741, #2d4a3e, #1a3228)",
+      "initials": "USRP",
+      "overview": "The NI USRP 2921 operates from 2.4 GHz to 2.5 GHz and 4.9 GHz to 5.9 GHz, providing a versatile platform for teaching and researching wireless communication protocols including Wi-Fi, LTE, and custom OFDM waveforms. In Shannon Lab, it is used for hands-on experiments in digital communication, channel estimation, and MIMO systems. Paired with LabVIEW, students can design, simulate and deploy real wireless systems on actual RF hardware.",
+      "specs": [
+        { "key": "Frequency Range", "val": "2.4–2.5 GHz and 4.9–5.9 GHz" },
+        { "key": "Bandwidth", "val": "Up to 20 MHz real-time" },
+        { "key": "ADC/DAC", "val": "14-bit, 100 MS/s ADC; 16-bit, 400 MS/s DAC" },
+        { "key": "Interface", "val": "Gigabit Ethernet" },
+        { "key": "Software", "val": "NI LabVIEW, MATLAB integration" },
+        { "key": "MIMO Support", "val": "2×2 MIMO with external clock sync" }
+      ],
+      "applications": [
+        "OFDM and wireless communication experiments",
+        "Channel estimation and equalization labs",
+        "MIMO antenna configuration testing",
+        "Software-defined radio prototyping",
+        "Real-time spectrum analysis"
+      ]
+    },
+    {
+      "id": "usrp-2922",
+      "title": "NI USRP 2922",
+      "category": "SDR Platform",
+      "subtitle": "Wideband software-defined radio for advanced research",
+      "description": "The NI USRP 2922 provides a wider frequency range from 400 MHz to 4.4 GHz, enabling research across multiple wireless bands and protocols.",
+      "gradient": "linear-gradient(135deg, #3a5a8c, #1e3a5f, #0f2340)",
+      "initials": "USRP",
+      "overview": "The NI USRP 2922 extends the frequency coverage to 400 MHz–4.4 GHz, making it ideal for exploring cellular, ISM band, and public safety communication standards. It supports real-time streaming of I/Q data and works with LabVIEW Communications Design Suite for rapid prototyping of next-generation wireless systems. Shannon Lab uses these for advanced coursework in digital communication and signal processing research projects.",
+      "specs": [
+        { "key": "Frequency Range", "val": "400 MHz to 4.4 GHz" },
+        { "key": "Bandwidth", "val": "Up to 20 MHz real-time" },
+        { "key": "Max Output Power", "val": "50 mW to 100 mW (17–20 dBm)" },
+        { "key": "ADC/DAC", "val": "14-bit, 100 MS/s ADC; 16-bit, 400 MS/s DAC" },
+        { "key": "Interface", "val": "Gigabit Ethernet" },
+        { "key": "Antenna Ports", "val": "TX/RX and RX2 SMA connectors" }
+      ],
+      "applications": [
+        "Multi-band wireless communication research",
+        "Cognitive radio and spectrum sensing",
+        "LTE and 5G NR signal generation",
+        "Digital modulation/demodulation labs",
+        "Antenna characterization experiments"
+      ]
+    },
+    {
+      "id": "warp-boards",
+      "title": "WARP Boards",
+      "category": "Research Platform",
+      "subtitle": "Wireless open-access research platform for PHY/MAC prototyping",
+      "description": "WARP (Wireless Open-Access Research Platform) boards provide a scalable, programmable platform for cutting-edge wireless communication research.",
+      "gradient": "linear-gradient(135deg, #7a4a8c, #4e2d6e, #2a1442)",
+      "initials": "WARP",
+      "overview": "WARP boards are FPGA-based wireless platforms designed for real-time wireless experiments. They support custom PHY and MAC layer implementations, enabling researchers to prototype and test novel wireless algorithms on real hardware. Shannon Lab uses WARP boards for advanced projects involving beamforming, interference management, and cross-layer protocol design. The platform includes reference designs for OFDM, MIMO, and full-duplex communication.",
+      "specs": [
+        { "key": "FPGA", "val": "Xilinx Virtex-6 / Virtex-7" },
+        { "key": "RF Interface", "val": "Dual-band 2.4 GHz and 5 GHz" },
+        { "key": "Bandwidth", "val": "Up to 40 MHz" },
+        { "key": "Architecture", "val": "Modular, stackable RF and baseband" },
+        { "key": "Framework", "val": "WARPLab (MATLAB) + Reference Design" },
+        { "key": "MIMO", "val": "Up to 4×4 with clock synchronization" }
+      ],
+      "applications": [
+        "PHY/MAC layer protocol research",
+        "Beamforming and precoding experiments",
+        "Full-duplex wireless communication",
+        "Interference alignment and management",
+        "Cross-layer optimization studies"
+      ]
+    },
+    {
+      "id": "dc-trainer",
+      "title": "DC Communication Trainer Kits",
+      "category": "Training Kit",
+      "subtitle": "Hands-on analog and digital communication training modules",
+      "description": "Comprehensive trainer kits for teaching modulation, demodulation, encoding, and decoding techniques in both analog and digital domains.",
+      "gradient": "linear-gradient(135deg, #8c6a3a, #6b4e24, #3d2b10)",
+      "initials": "DCT",
+      "overview": "The DC Communication Trainer Kits provide a structured hardware environment for students to explore fundamental communication concepts. Each kit includes pre-built circuit modules for AM, FM, PM, ASK, FSK, PSK, PCM, delta modulation, and line coding schemes. Students can observe real waveforms on oscilloscopes, measure signal quality, and verify theoretical concepts against practical measurements. These kits form the backbone of the Fundamentals of Digital Communication course at Shannon Lab.",
+      "specs": [
+        { "key": "Analog Modules", "val": "AM, FM, PM modulator/demodulator" },
+        { "key": "Digital Modules", "val": "ASK, FSK, PSK, QPSK, QAM" },
+        { "key": "Encoding", "val": "PCM, DPCM, Delta Modulation, ADM" },
+        { "key": "Line Coding", "val": "NRZ, RZ, Manchester, AMI, HDB3" },
+        { "key": "Built-in Sources", "val": "Function generator, clock, noise gen" },
+        { "key": "Power Supply", "val": "Integrated regulated DC supply" }
+      ],
+      "applications": [
+        "Analog modulation & demodulation labs",
+        "Digital communication fundamentals",
+        "Pulse code modulation experiments",
+        "Line coding and baseband signaling",
+        "Signal-to-noise ratio measurements"
+      ]
+    },
+    {
+      "id": "zed-boards",
+      "title": "ZED Boards",
+      "category": "FPGA Platform",
+      "subtitle": "Xilinx Zynq-7000 SoC development and prototyping board",
+      "description": "ZedBoard features the Xilinx Zynq-7000 AP SoC, combining a dual-core ARM Cortex-A9 processor with Artix-7 FPGA logic for hardware-software co-design.",
+      "gradient": "linear-gradient(135deg, #2d6b5a, #1a4a3a, #0e2e22)",
+      "initials": "ZED",
+      "overview": "The ZedBoard is an evaluation and development board built around the Zynq-7020 AP SoC. It provides a powerful platform for embedded system design, combining the flexibility of FPGA fabric with the processing power of ARM cores. In Shannon Lab, ZedBoards are used for digital signal processing implementations, software-defined radio baseband processing, and hardware acceleration of communication algorithms. Students learn hardware-software co-design methodologies using Xilinx Vivado and the Vitis development environment.",
+      "specs": [
+        { "key": "SoC", "val": "Xilinx Zynq-7020 (XC7Z020-CLG484)" },
+        { "key": "Processor", "val": "Dual-core ARM Cortex-A9 @ 667 MHz" },
+        { "key": "FPGA Logic", "val": "85K logic cells, 560 KB Block RAM" },
+        { "key": "Memory", "val": "512 MB DDR3" },
+        { "key": "I/O", "val": "HDMI, VGA, USB OTG, Ethernet, OLED" },
+        { "key": "Expansion", "val": "FMC-LPC, Pmod, Arduino headers" }
+      ],
+      "applications": [
+        "Hardware-software co-design projects",
+        "DSP algorithm acceleration on FPGA",
+        "Embedded Linux and bare-metal applications",
+        "SDR baseband processing engines",
+        "Real-time signal processing implementations"
+      ]
+    },
+    {
+      "id": "zynq-boards",
+      "title": "Zynq Boards",
+      "category": "FPGA Platform",
+      "subtitle": "Advanced Zynq SoC platforms for system-level prototyping",
+      "description": "Zynq-based development boards for implementing complex systems combining programmable logic with high-performance processing.",
+      "gradient": "linear-gradient(135deg, #5a3a6b, #3e204e, #220f30)",
+      "initials": "ZYNQ",
+      "overview": "The Zynq development boards in Shannon Lab leverage the full Zynq-7000 architecture for system-level prototyping. These boards are used for advanced projects requiring tight integration between custom hardware accelerators and software processing - including real-time video processing, high-throughput communication systems, and sensor fusion applications. The boards support high-speed connectivity and are paired with Xilinx development tools for comprehensive FPGA design workflows.",
+      "specs": [
+        { "key": "Architecture", "val": "Xilinx Zynq-7000 All Programmable SoC" },
+        { "key": "Processing System", "val": "Dual ARM Cortex-A9, NEON, FPU" },
+        { "key": "Programmable Logic", "val": "Artix-7 equivalent FPGA fabric" },
+        { "key": "Interconnect", "val": "AXI high-performance + general-purpose" },
+        { "key": "Development Tools", "val": "Vivado Design Suite, Vitis, PetaLinux" },
+        { "key": "Peripherals", "val": "GigE, USB, SPI, I2C, UART, GPIO" }
+      ],
+      "applications": [
+        "System-on-chip communication prototyping",
+        "Custom accelerator design for DSP",
+        "FPGA-based machine learning inference",
+        "High-speed data acquisition systems",
+        "Reconfigurable computing research"
+      ]
+    },
+    {
+      "id": "power-amp",
+      "title": "Power Amplifier Module",
+      "category": "RF Component",
+      "subtitle": "Broadband RF power amplifier for wireless transmission",
+      "description": "The power amplifier module provides signal amplification for wireless transmission experiments, supporting various modulation schemes and frequency bands.",
+      "gradient": "linear-gradient(135deg, #8c3a3a, #6b2424, #3d1010)",
+      "initials": "PA",
+      "overview": "The Power Amplifier module in Shannon Lab is used for amplifying RF signals in wireless transmission chains. It is essential for experiments involving link budget analysis, over-the-air communication, and antenna testing. Students learn about amplifier linearity, gain compression, and efficiency tradeoffs that are critical in real-world wireless system design. The module supports multi-standard operation and can be cascaded for higher output power applications.",
+      "specs": [
+        { "key": "Type", "val": "Broadband linear power amplifier" },
+        { "key": "Frequency Range", "val": "100 MHz – 6 GHz" },
+        { "key": "Gain", "val": "20–30 dB (band dependent)" },
+        { "key": "Linearity", "val": "Class AB operation" },
+        { "key": "Connectors", "val": "SMA input/output" },
+        { "key": "Power Supply", "val": "External DC, regulated" }
+      ],
+      "applications": [
+        "RF link budget and path loss experiments",
+        "Over-the-air wireless transmission labs",
+        "Amplifier linearity and distortion analysis",
+        "Antenna range testing and validation",
+        "Modulated signal amplification studies"
+      ]
+    },
+    {
+      "id": "antennas",
+      "title": "Dual & Tri-Band Antennas",
+      "category": "RF Component",
+      "subtitle": "Multi-band antennas for wireless communication experiments",
+      "description": "A collection of dual-band and tri-band antennas supporting 2.4 GHz, 5 GHz, and sub-6 GHz operation for research and teaching.",
+      "gradient": "linear-gradient(135deg, #3a6b8c, #245a6b, #10333d)",
+      "initials": "ANT",
+      "overview": "Shannon Lab maintains a range of dual and tri-band antennas designed for wireless communication experiments. These antennas cover ISM band frequencies (2.4 GHz and 5 GHz) as well as cellular bands, providing the radiating elements needed for over-the-air testing with USRP and WARP platforms. Students use these antennas for antenna pattern measurement, polarization studies, gain characterization, and MIMO spatial multiplexing experiments.",
+      "specs": [
+        { "key": "Bands", "val": "2.4 GHz, 5 GHz, and sub-6 GHz" },
+        { "key": "Type", "val": "Omnidirectional and directional variants" },
+        { "key": "Gain", "val": "2 dBi – 9 dBi (model dependent)" },
+        { "key": "Polarization", "val": "Vertical linear" },
+        { "key": "Connector", "val": "SMA / RP-SMA" },
+        { "key": "Mounting", "val": "Magnetic base and tripod compatible" }
+      ],
+      "applications": [
+        "Antenna pattern and gain measurements",
+        "MIMO spatial multiplexing experiments",
+        "Wireless channel characterization",
+        "Polarization diversity studies",
+        "Range and coverage testing"
+      ]
+    },
+    {
+      "id": "labview",
+      "title": "NI LabVIEW",
+      "category": "Software",
+      "subtitle": "Graphical programming environment for test and measurement",
+      "description": "NI LabVIEW provides a graphical development environment for designing measurement, test, and control systems with built-in USRP integration.",
+      "gradient": "linear-gradient(135deg, #3a8c5a, #1e6b3e, #0e3d22)",
+      "initials": "LV",
+      "overview": "NI LabVIEW is the primary software platform used in Shannon Lab for instrument control and signal processing. Its graphical dataflow programming paradigm enables students to rapidly prototype communication systems - from basic modulation schemes to complex MIMO receivers. LabVIEW seamlessly integrates with NI USRP hardware for real-time RF signal acquisition and generation. The Communications Design Suite adds specialized toolkits for LTE, Wi-Fi, and 5G NR waveform generation and analysis.",
+      "specs": [
+        { "key": "Type", "val": "Graphical programming (G language)" },
+        { "key": "Platform", "val": "Windows (primary), Linux support" },
+        { "key": "Toolkits", "val": "Modulation, Spectral Analysis, Math" },
+        { "key": "Hardware Integration", "val": "Native NI USRP, DAQ support" },
+        { "key": "Comm Suite", "val": "LTE, Wi-Fi, 5G NR reference designs" },
+        { "key": "License", "val": "Academic site license" }
+      ],
+      "applications": [
+        "USRP hardware control and signal acquisition",
+        "Real-time communication system prototyping",
+        "Automated measurement and data logging",
+        "Signal generation and waveform analysis",
+        "Student lab experiment automation"
+      ]
+    },
+    {
+      "id": "systemvue",
+      "title": "Keysight SystemVue",
+      "category": "Software",
+      "subtitle": "Electronic system-level design environment for communication",
+      "description": "SystemVue is a focused EDA environment for electronic system-level design, enabling simulation and verification of communication systems and signal processing algorithms.",
+      "gradient": "linear-gradient(135deg, #6b5a3a, #4e3d20, #302410)",
+      "initials": "SV",
+      "overview": "Keysight SystemVue provides a simulation-centric environment for designing and verifying communication signal processing systems. It bridges the gap between algorithm design and hardware implementation with support for C++, MATLAB, and HDL co-simulation. Shannon Lab uses SystemVue for link-level simulation of wireless standards, BER analysis, and system architecture exploration before deploying algorithms on FPGA or SDR hardware.",
+      "specs": [
+        { "key": "Type", "val": "Electronic system-level (ESL) design tool" },
+        { "key": "Simulation", "val": "Dataflow + time-domain + frequency-domain" },
+        { "key": "Standards", "val": "5G NR, LTE, Wi-Fi 6, Radar, GNSS" },
+        { "key": "Co-Simulation", "val": "MATLAB, C++, HDL integration" },
+        { "key": "Libraries", "val": "DSP, RF, Phased Array, Radar" },
+        { "key": "License", "val": "Academic license" }
+      ],
+      "applications": [
+        "Link-level simulation for wireless standards",
+        "BER performance analysis and optimization",
+        "Phased array beamforming simulation",
+        "Algorithm-to-hardware verification flow",
+        "System architecture trade-off analysis"
+      ]
+    },
+    {
+      "id": "optisystem",
+      "title": "OptiSystem v14",
+      "category": "Software",
+      "subtitle": "Optical communication system simulation software",
+      "description": "OptiSystem enables the design, simulation, and optimization of virtually any type of optical link in the physical layer of a broad spectrum of optical networks.",
+      "gradient": "linear-gradient(135deg, #8c5a3a, #6b3e20, #3d2210)",
+      "initials": "OS",
+      "overview": "OptiSystem version 14 by Optiwave is used in Shannon Lab for simulating fiber-optic communication systems. It provides a comprehensive environment for designing WDM networks, analyzing link performance, and exploring advanced modulation formats for optical communication. Students use OptiSystem to understand the interplay between fiber dispersion, nonlinear effects, and amplifier noise in long-haul and metro optical networks.",
+      "specs": [
+        { "key": "Type", "val": "Optical system simulation platform" },
+        { "key": "Components", "val": "800+ component library" },
+        { "key": "Simulation", "val": "Signal propagation, BER, Q-factor" },
+        { "key": "Networks", "val": "WDM, DWDM, PON, free-space optical" },
+        { "key": "Modulation", "val": "OOK, DPSK, QPSK, QAM, coherent" },
+        { "key": "Version", "val": "14.x (academic license)" }
+      ],
+      "applications": [
+        "Fiber-optic link design and analysis",
+        "WDM network simulation",
+        "Optical amplifier (EDFA) characterization",
+        "Dispersion compensation studies",
+        "Free-space optical communication"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Antennas Theory & Design",
+      "buttons": [
+        { "label": "Experiment List", "link": "faq/lab.pdf", "primary": true },
+        { "label": "Lab Handouts", "link": "faq/Course.pdf", "primary": false },
+        { "label": "Course Objectives", "link": "faq/Facilities.pdf", "primary": false }
+      ]
+    },
+    {
+      "title": "Algorithms to Architecture",
+      "buttons": [
+        { "label": "Experiment List", "link": "faq/lab.pdf", "primary": true },
+        { "label": "Lab Handouts", "link": "faq/Course.pdf", "primary": false },
+        { "label": "Course Objectives", "link": "faq/Facilities.pdf", "primary": false }
+      ]
+    },
+    {
+      "title": "Robotics",
+      "buttons": [
+        { "label": "Experiment List", "link": "faq/lab.pdf", "primary": true },
+        { "label": "Lab Handouts", "link": "faq/Course.pdf", "primary": false },
+        { "label": "Course Objectives", "link": "faq/Facilities.pdf", "primary": false }
+      ]
+    },
+    {
+      "title": "Fundamentals of Digital Communication",
+      "buttons": [
+        { "label": "Experiment List", "link": "faq/lab.pdf", "primary": true },
+        { "label": "Lab Handouts", "link": "faq/Course.pdf", "primary": false },
+        { "label": "Course Objectives", "link": "faq/Facilities.pdf", "primary": false }
+      ]
+    }
+  ],
+  "guidelines": [
+    { "name": "LAB Guidelines", "link": "policyandguidelines/lab%20guidelines.pdf" },
+    { "name": "TF Guidelines", "link": "policyandguidelines/Facilities.pdf" },
+    { "name": "Student Guidelines", "link": "policyandguidelines/student%20guidelines.pdf" },
+    { "name": "TA Guidelines", "link": "policyandguidelines/Course.pdf" },
+    { "name": "Safety & Security", "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf" }
+  ],
+  "gallery": [
+    { "image": "images/portfolio/01.jpg", "alt": "Technical Events", "label": "Technical Events" },
+    { "image": "images/portfolio/03.jpg", "alt": "Workshops", "label": "Workshops" },
+    { "image": "images/portfolio/04.jpg", "alt": "TinkerHack", "label": "TinkerHack" },
+    { "image": "images/portfolio/05.jpg", "alt": "Electrivire", "label": "Electrivire" },
+    { "image": "images/portfolio/06.jpg", "alt": "HACKiT", "label": "HACKiT" },
+    { "image": "images/portfolio/07.jpg", "alt": "V2V Workshop", "label": "V2V Workshop" },
+    { "image": "images/portfolio/08.jpg", "alt": "NS3 Workshop", "label": "NS3 Workshop" }
+  ],
+  "projects": [
+    {
+      "date": "March 2021",
+      "title": "Touchless Tap",
+      "description": "ECE lab developed a cost-effective product to ensure safety during the Corona pandemic. The sensor-based water tap works without manual operation when it detects your hand under the nozzle. Designed and developed by Research Engineers Sana & Khagendra.",
+      "readMoreLink": "https://drive.google.com/file/d/1hBZD8eXcePdIPmQdU7vHj53eiggsQZ3R/view?usp=sharing"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Best Students",
+      "names": ["-", "-", "-"]
+    },
+    {
+      "title": "Best Teaching Assistants",
+      "names": ["-", "-", "-"]
+    },
+    {
+      "title": "Best Interns",
+      "names": ["-", "-", "-"]
+    }
+  ]
+}

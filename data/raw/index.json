@@ -1,0 +1,416 @@
+{
+  "settings": {
+    "announcementMax": 6,
+    "labsMax": 6,
+    "galleryMax": 7,
+    "projectsMax": 3,
+    "policiesMax": 5,
+    "teamMax": 4
+  },
+  "announcements": [
+    {
+      "type": "event",
+      "isNew": true,
+      "date": "July 15, 2026",
+      "title": "TinkerHack 2026 — Registrations Open!",
+      "description": "The annual hardware hackathon by ECE-Labs is back. Build, solder, and innovate over 36 hours. Open to all IIIT-Delhi students.",
+      "linkText": "Read more",
+      "link": "#"
+    },
+    {
+      "type": "event",
+      "isNew": true,
+      "date": "July 15, 2026",
+      "title": "Waddupppp!",
+      "description": "Bleh.",
+      "linkText": "Read more",
+      "link": "#"
+    },
+    {
+      "type": "maintenance",
+      "isNew": true,
+      "date": "July 12–14, 2026",
+      "title": "Shannon Lab Scheduled Maintenance",
+      "description": "Shannon Lab (Room 305) will be closed for equipment calibration and power upgrade. USRP and WARP boards will be unavailable.",
+      "linkText": "Read more",
+      "link": "#"
+    },
+    {
+      "type": "update",
+      "isNew": false,
+      "date": "July 8, 2026",
+      "title": "Updated Issue/Return Policy — Effective Aug 1",
+      "description": "New component return timelines and late-fee structure have been introduced. Please review the updated policy PDF before your next checkout.",
+      "linkText": "View policy",
+      "link": "policyandguidelines/Issue%20return.pdf"
+    },
+    {
+      "type": "event",
+      "isNew": false,
+      "date": "June 28, 2026",
+      "title": "Electrivire Workshop — RF Fundamentals",
+      "description": "A hands-on workshop covering VNA operation, antenna measurements, and PCB fabrication. Conducted by the RF Lab team in Room 304.",
+      "linkText": "Read more",
+      "link": "#"
+    },
+    {
+      "type": "deadline",
+      "isNew": false,
+      "date": "June 20, 2026",
+      "title": "Summer Project Submissions Due",
+      "description": "All summer project reports and component returns must be completed by June 30. Contact the lab team for extension requests.",
+      "linkText": "Read more",
+      "link": "#"
+    },
+    {
+      "type": "general",
+      "isNew": false,
+      "date": "June 10, 2026",
+      "title": "New Lab Manual Available — RF Lab",
+      "description": "The updated RF & Applied Electromagnetics Lab manual is now available for download. Covers all new experiments added for the Monsoon semester.",
+      "linkText": "Read more",
+      "link": "#"
+    }
+  ],
+  "labs": [
+    {
+      "num": "01",
+      "name": "Digital Circuits Lab",
+      "image": "images/labs/dc.jpg",
+      "room": "Room 301",
+      "title": "Digital Circuits Lab",
+      "description": "Dedicated to concepts and implementation of basic circuits design - a teaching lab supporting course projects for up to 40 students per session.",
+      "link": "dc.html"
+    },
+    {
+      "num": "02",
+      "name": "Circuits & Innovation Lab",
+      "image": "images/labs/cil.jpg",
+      "room": "Room 302",
+      "title": "Circuits & Innovation Lab",
+      "description": "Analog & digital circuits, microcontrollers - 50 students per session.",
+      "link": "cil.html"
+    },
+    {
+      "num": "03",
+      "name": "Basic Electronics Lab",
+      "image": "images/labs/be.jpg",
+      "room": "Room 303",
+      "title": "Basic Electronics Lab",
+      "description": "Digital circuits, basic electronics, circuit theory & devices - 50 students per session.",
+      "link": "be.html"
+    },
+    {
+      "num": "04",
+      "name": "RF & Applied Electromagnetics Lab",
+      "image": "images/labs/rf.jpg",
+      "room": "Room 304",
+      "title": "RF & Applied Electromagnetics Lab",
+      "description": "High-frequency instruments, licensed software, PCB fabrication - research and course projects.",
+      "link": "rf.html"
+    },
+    {
+      "num": "05",
+      "name": "Shannon Lab",
+      "image": "images/labs/shannon.jpg",
+      "room": "Room 305",
+      "title": "Shannon Lab",
+      "description": "Wireless communication, signal processing, robotics, automation - teaching and research.",
+      "link": "sho.html"
+    },
+    {
+      "num": "06",
+      "name": "Advanced ECE Lab",
+      "image": "images/labs/ael.jpeg",
+      "room": "A-616 · R&D Building",
+      "title": "Advanced ECE Lab",
+      "description": "5G testbed, RIS/ORIS setups, D2D communication, real-time signal processing.",
+      "link": "ael.html"
+    }
+  ],
+  "gallery": [
+    {
+      "category": "creative",
+      "image": "images/portfolio/01.jpg",
+      "alt": "TinkerHack",
+      "label": "TinkerHack",
+      "type": "image"
+    },
+    {
+      "category": "creative",
+      "image": "images/portfolio/03.jpg",
+      "alt": "Electrivire",
+      "label": "Electrivire",
+      "type": "image"
+    },
+    {
+      "category": "corporate",
+      "image": "images/portfolio/04.jpg",
+      "alt": "RF Workshop",
+      "label": "RF Workshop",
+      "type": "image"
+    },
+    {
+      "category": "creative",
+      "image": "images/portfolio/05.jpg",
+      "alt": "HACKiT",
+      "label": "HACKiT",
+      "type": "image"
+    },
+    {
+      "category": "corporate",
+      "image": "images/portfolio/06.jpg",
+      "alt": "V2V Workshop",
+      "label": "V2V Workshop",
+      "type": "image"
+    },
+    {
+      "category": "corporate",
+      "image": "images/portfolio/07.jpg",
+      "alt": "NS3 Workshop",
+      "label": "NS3 Workshop",
+      "type": "image"
+    },
+    {
+      "category": "tvideos",
+      "image": "images/portfolio/02.mp4",
+      "alt": "Lab Video",
+      "label": "Lab Video",
+      "type": "video",
+      "poster": "images/portfolio/03.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "date": "March 2021",
+      "title": "Touchless Tap",
+      "description": "ECE Lab developed a cost-effective sensor-based water tap that works when it detects your hand under the nozzle. Designed by Research Engineers Sana & Khagendra.",
+      "image": "images/blog/7.jpg"
+    },
+    {
+      "date": "September 2022",
+      "title": "ELEO",
+      "description": "ECE Lab Enquiry Officer (ELEO) is a chatbot designed to resolve queries related to ECE Labs. It assists users within seconds and was designed by B.Tech student Jayan Pahuja under the guidance of Sana Ali Naqvi & Khagendra Joshi.",
+      "image": "images/blog/1.jpg"
+    },
+    {
+      "date": "November 2019",
+      "title": "Light Automation",
+      "description": "A summer project aimed at making ECE-Labs fully automated, beginning with lights using Arduino, PIR sensors, relays, and lab resources. Designed by Paritosh & Amisha under the guidance of Engineer Abhishek Kumar.",
+      "image": "images/blog/03.jpg"
+    }
+  ],
+  "policies": [
+    {
+      "name": "Issue / Return",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/Issue%20return.pdf"
+    },
+    {
+      "name": "Locker",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/locker.pdf"
+    },
+    {
+      "name": "Safety & Security",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf"
+    },
+    {
+      "name": "Lab Guidelines",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/lab%20guidelines.pdf"
+    },
+    {
+      "name": "Student Guidelines",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/student%20guidelines.pdf"
+    }
+  ],
+  "faq": [
+    {
+      "topic": "Lab Related",
+      "questions": [
+        "How many ECE-Labs are there",
+        "Where are ECE-Labs located",
+        "Seating capacity of the Labs",
+        "Who manages ECE Labs",
+        "Events organized by the labs"
+      ],
+      "pdfLink": "faq/lab.pdf",
+      "pdfLabel": "Open Answers PDF"
+    },
+    {
+      "topic": "Course Related",
+      "questions": [
+        "Courses conducted in ECE Labs",
+        "Where can I find lab handouts",
+        "Where can I get resources for my project",
+        "How can I get help in course related doubts",
+        "Can I access lab for my course work"
+      ],
+      "pdfLink": "faq/Course.pdf",
+      "pdfLabel": "Open Answers PDF"
+    },
+    {
+      "topic": "Facilities Related",
+      "questions": [
+        "What are the issue/return policies",
+        "Where can I find sensors/actuators",
+        "What are the guidelines for students",
+        "What are the safety precautions available",
+        "Where can I find the inventory list of resources"
+      ],
+      "pdfLink": "faq/Facilities.pdf",
+      "pdfLabel": "Open Answers PDF"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahul Gupta",
+      "role": "Technical Officer (Research)",
+      "bio": "10+ years of experience with papers in top journals and conferences in the RF domain.",
+      "photo": "images/team/02.jpg"
+    },
+    {
+      "name": "Sana Ali Naqvi",
+      "role": "Deputy Technical Officer (Research)",
+      "bio": "10+ years in power systems, power electronics, and wearable domains.",
+      "photo": "images/team/08.jpg"
+    },
+    {
+      "name": "Khagendra Joshi",
+      "role": "Deputy Technical Officer (Research)",
+      "bio": "10+ years in wireless communication domain, published in top conferences.",
+      "photo": "images/team/9.jpg"
+    },
+    {
+      "name": "Abhishek Kumar",
+      "role": "Junior Technical Officer (SG)",
+      "bio": "10+ years in digital processing and test & measurement industries.",
+      "photo": "images/team/01.jpg"
+    }
+  ],
+  "facilities": [
+    {
+      "num": "01",
+      "title": "Hardware Facilities",
+      "items": [
+        {
+          "label": "Digital Circuits Lab",
+          "href": "dc.html"
+        },
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "be.html"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "rf.html"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "02",
+      "title": "Software Facilities",
+      "items": [
+        {
+          "label": "Digital Circuits Lab",
+          "href": "dc.html"
+        },
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "be.html"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "rf.html"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "title": "Issue / Return Facility",
+      "items": [
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "be.html"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "rf.html"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "title": "Cabinet Facility",
+      "items": [
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "rf.html"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "title": "Lab Manuals / Handouts",
+      "items": [
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "be.html"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "rf.html"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "title": "Project Support",
+      "items": [
+        {
+          "label": "All ECE labs and student projects",
+          "href": "#projects"
+        }
+      ]
+    }
+  ]
+}

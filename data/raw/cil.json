@@ -1,0 +1,97 @@
+{
+  "settings": {
+    "galleryMax": 6,
+    "projectsMax": 3
+  },
+  "courses": [
+    {
+      "title": "Basic Electronics",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1etOUaacdrNXWP2wlCaZ0r30xIkXnuxYY/view", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1Hxaid6aQ19KPqZZ49uzht2rLrJSjCdgP/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1sr5Xk4qfxaGaijOFLxsv7EtuIufHcWoA/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Digital Circuits",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1U9IxB58unfGmZN8k_udLowfe_v5aabNy/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1niamOY7nkpKO41SPHtPzYxetzNkdqltN/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1T2SoVLIwILXKJofm9y_XmbA_npTzFfuR/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Integrated Electronics",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1Yb6iTbY2Q5c0uG5FSuI-HoK8Pmpg7MeU/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1SNJwRBsovidfaeOoa2My1uIICEfmVGqg/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/198LIeguA_9OXFb2W9hsSDn_BF-8u7LIa/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Circuit Theory & Devices",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/19dfQzNCEFPND8DWsB9t-iV54l68a9qMn/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1dSlQQK_RwmOHN837WI0vCfbeu8tJygAW/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1csWy4efm_zF_GtUE3d8qIm0wmRnYLo7r/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Prototyping Interactive Systems",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1Jnb_A-yG727__S6hmhmNufcq--a61oca/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/drive/folders/1LB2f6tqTMzbtdhStNSWtkkCfAUPtK6oK?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1qN3IZnNmjypTFMCc4MwvzCUnvsVCHKoF/view?usp=sharing", "primary": false }
+      ]
+    }
+  ],
+  "guidelines": [
+    { "name": "LAB Guidelines", "link": "policyandguidelines/lab%20guidelines.pdf" },
+    { "name": "TF Guidelines", "link": "policyandguidelines/Facilities.pdf" },
+    { "name": "Student Guidelines", "link": "policyandguidelines/student%20guidelines.pdf" },
+    { "name": "TA Guidelines", "link": "policyandguidelines/Course.pdf" },
+    { "name": "Safety & Security", "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf" }
+  ],
+  "gallery": [
+    { "image": "images/gallery/2.jpg", "alt": "2018", "label": "2018" },
+    { "image": "images/gallery/1.jpg", "alt": "2019", "label": "2019" },
+    { "image": "images/gallery/3.jpg", "alt": "2021", "label": "2021" },
+    { "image": "images/gallery/4.jpg", "alt": "2022", "label": "2022" },
+    { "image": "images/gallery/5.jpg", "alt": "Electrivire '18", "label": "Electrivire '18" },
+    { "image": "images/gallery/6.jpg", "alt": "Electrivire '21", "label": "Electrivire '21" }
+  ],
+  "projects": [
+    {
+      "date": "March 2021",
+      "title": "Touchless Tap",
+      "description": "A cost-effective product developed to ensure safety during the Corona pandemic. The sensor-based water tap does not require manual operation and works when it detects your hand under the nozzle. Designed and developed by Research Engineers Sana & Khagendra.",
+      "readMoreLink": "https://drive.google.com/file/d/1hBZD8eXcePdIPmQdU7vHj53eiggsQZ3R/view?usp=sharing"
+    },
+    {
+      "date": "September 2022",
+      "title": "ELEO",
+      "description": "ECE Lab Enquiry Officer (ELEO) is a chatbot designed to resolve queries related to ECE Labs within seconds. Designed by B.Tech student Jayan Pahuja under the guidance of Engineers Sana Ali Naqvi & Khagendra Joshi.",
+      "readMoreLink": null
+    },
+    {
+      "date": "October 2022",
+      "title": "Smart File Monitoring System",
+      "description": "Coming soon.",
+      "readMoreLink": null
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Best Students",
+      "names": ["-", "-", "-", "-", "-"]
+    },
+    {
+      "title": "Best TAs - Winter 2023",
+      "names": ["Aditya Muralidharan", "Chitra Sharma", "Shikha Singh", "Adarsh Meena", "Shraddha Agarwal"]
+    },
+    {
+      "title": "Best Interns - Summer 2023",
+      "names": ["Akhil Sharma", "Shashank Shekhar Singh", "Abbas Murtaza", "Nipun Kothari"]
+    }
+  ]
+}
