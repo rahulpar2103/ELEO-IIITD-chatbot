@@ -1,7 +1,7 @@
 import sys
 sys.path.append(".")
 from langchain_core.tools import tool
-from retrieval.retriever import load_vectorstore
+from retrieval.retriever import load_vectorstore, expand_query
 from retrieval.announcements import get_recent_announcements as _get_recent_announcements
 
 
@@ -9,8 +9,10 @@ from retrieval.announcements import get_recent_announcements as _get_recent_anno
 def search_knowledge_base(query: str) -> str:
     """Search the ECE Labs knowledge base for info about labs, courses, projects, FAQs, team, and policies."""
     vectorstore = load_vectorstore()
-    results = vectorstore.similarity_search(query, k=4)
+    expanded = expand_query(query)
+    results = vectorstore.similarity_search(expanded, k=4)
     return "\n\n".join(doc.page_content for doc in results)
+
 
 @tool
 def get_recent_announcements(limit: int = 5) -> str:
@@ -18,7 +20,7 @@ def get_recent_announcements(limit: int = 5) -> str:
     announcements = _get_recent_announcements(limit)
     return "\n".join(f"{a['date']} - {a['title']}" for a in announcements)
 
-    
+
 if __name__ == "__main__":
     print(search_knowledge_base.invoke("What is the BE lab about?"))
     print("---")

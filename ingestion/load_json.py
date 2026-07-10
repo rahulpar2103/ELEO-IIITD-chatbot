@@ -7,14 +7,25 @@ def load_json(path: str) -> dict:
         return json.load(f)
 
 
+LAB_NAMES = {
+    "be.json": "Basic Electronics Lab",
+    "dc.json": "Digital Circuits Lab",
+    "cil.json": "Circuits & Innovation Lab",
+    "rf.json": "RF & Applied Electromagnetics Lab",
+    "sho.json": "Shannon Lab",
+    "ael.json": "Advanced ECE Lab",
+}
+
+
 def extract_lab_content(data: dict, source: str) -> list[dict]:
     items = []
+    lab_name = LAB_NAMES.get(source, source)
 
     for course in data.get("courses", []):
         title = course.get("title")
         if title:
-            items.append({"text": title, "source": source, "section": "courses"})
-
+            text = f"{title} is a course taught in {lab_name}."
+            items.append({"text": text, "source": source, "section": "courses"})
     for project in data.get("projects", []):
         title = project.get("title", "")
         date = project.get("date", "")
@@ -22,14 +33,12 @@ def extract_lab_content(data: dict, source: str) -> list[dict]:
         text = f"{title} ({date}): {description}".strip()
         if text:
             items.append({"text": text, "source": source, "section": "projects"})
-
     for highlight in data.get("highlights", []):
         title = highlight.get("title", "")
         names = [n for n in highlight.get("names", []) if n and n != "-"]
         if title and names:
             text = f"{title}: {', '.join(names)}"
             items.append({"text": text, "source": source, "section": "highlights"})
-
     return items
 
 

@@ -92,12 +92,16 @@ if __name__ == "__main__":
         for i in range(0, len(new_or_changed), batch_size):
             batch_items = new_or_changed[i : i + batch_size]
             batch_docs = [c for (_, _, c) in batch_items]
+            batch_ids = [chunk_id for (chunk_id, _, _) in batch_items]
             print(f"Embedding batch {i} to {i + len(batch_docs)}...")
 
             if vectorstore is None:
-                vectorstore = FAISS.from_documents(batch_docs, embeddings)
+                vectorstore = FAISS.from_documents(batch_docs, embeddings, ids=batch_ids)
             else:
-                vectorstore.add_documents(batch_docs)
+                stale_ids = [cid for cid in batch_ids if cid in manifest]
+                if stale_ids:
+                    vectorstore.delete(ids=stale_ids)
+                vectorstore.add_documents(batch_docs, ids=batch_ids)
 
             if i + batch_size < len(new_or_changed):
                 print("Pausing to respect rate limit...")

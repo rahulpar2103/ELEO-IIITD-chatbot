@@ -8,6 +8,7 @@ from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_google_genai import ChatGoogleGenerativeAI
 from tools.knowledge_tools import search_knowledge_base, get_recent_announcements
 from langchain_core.messages import SystemMessage
+from langgraph.checkpoint.memory import InMemorySaver
 
 load_dotenv()
 
@@ -40,12 +41,22 @@ builder.add_edge(START, "agent")
 builder.add_conditional_edges("agent", tools_condition)
 builder.add_edge("tools", "agent")
 
-graph = builder.compile()
+memory = InMemorySaver()
+graph = builder.compile(checkpointer=memory)
 
 if __name__ == "__main__":
-    result = graph.invoke({"messages": [("user", "What is the BE lab about?")]})
-    for m in result["messages"]:
-        print(type(m).__name__, "-", getattr(m, "tool_calls", None) or m.content[:100])
-        print()
+    config = {"configurable": {"thread_id": "test-1"}}
 
-    graph.get_graph().draw_mermaid_png(output_file_path="generation/graph.png")
+    result = graph.invoke({"messages": [("user", "What is the BE lab about?")]}, config)
+    print(result["messages"][-1].content[:200])
+
+    print("---")
+
+    result2 = graph.invoke({"messages": [("user", "Which room is it in?")]}, config)
+    print(result2["messages"][-1].content[:200])
+
+    print("---")
+
+    config2 = {"configurable": {"thread_id": "test-2"}}
+    result3 = graph.invoke({"messages": [("user", "Which room is it in?")]}, config2)
+    print(result3["messages"][-1].content[:200])
