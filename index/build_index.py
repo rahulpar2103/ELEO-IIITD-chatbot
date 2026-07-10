@@ -37,11 +37,11 @@ def build_all_documents():
     return chunk_documents(all_docs)
 
 
-def compute_chunk_id(chunk) -> str:
-    """Stable ID for a chunk based on its source + position in that source."""
+def compute_chunk_id(chunk, counters: dict) -> str:
+    """Stable ID: source + a running count of chunks seen from that source."""
     source = chunk.metadata.get("source", "unknown")
-    section = chunk.metadata.get("section", chunk.metadata.get("page", "0"))
-    return f"{source}::{section}::{chunk.page_content[:30]}"
+    counters[source] = counters.get(source, -1) + 1
+    return f"{source}::{counters[source]}"
 
 
 def compute_hash(text: str) -> str:
@@ -65,9 +65,10 @@ if __name__ == "__main__":
 
     manifest = load_manifest()
     new_or_changed = []
+    counters = {}
 
     for chunk in chunks:
-        chunk_id = compute_chunk_id(chunk)
+        chunk_id = compute_chunk_id(chunk, counters)
         chunk_hash = compute_hash(chunk.page_content)
         if manifest.get(chunk_id) != chunk_hash:
             new_or_changed.append((chunk_id, chunk_hash, chunk))
