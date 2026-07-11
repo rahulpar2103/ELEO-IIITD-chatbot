@@ -12,6 +12,10 @@ RUN mkdir -p /app/frontend/data /app/frontend/faq /app/frontend/policyandguideli
 # copy the rest of the project
 COPY . .
 
+# Ensure entrypoint.sh has executable permissions and LF line endings
+RUN chmod +x /app/entrypoint.sh && sed -i 's/\r$//' /app/entrypoint.sh
+
 EXPOSE 8000
 
+ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -18,7 +18,7 @@ MANIFEST_PATH = "data/faiss_index_manifest.json"
 
 
 def build_all_documents():
-    frontend_dir = Path("../frontend")
+    frontend_dir = Path("./frontend") if Path("./frontend").exists() else Path("../frontend")
 
     pdf_docs = []
     # Load PDFs from faq and policyandguidelines directories
