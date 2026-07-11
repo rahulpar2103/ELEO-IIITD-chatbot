@@ -6,6 +6,9 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# create mount points for the shared frontend data volumes
+RUN mkdir -p /app/frontend/data /app/frontend/faq /app/frontend/policyandguidelines
+
 # copy the rest of the project
 COPY . .
 

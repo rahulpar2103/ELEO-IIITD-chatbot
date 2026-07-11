@@ -18,3 +18,4 @@ data/processed/
 # celery beat writes this file to track schedule state
 celerybeat-schedule
 celerybeat.pid
+chatbot

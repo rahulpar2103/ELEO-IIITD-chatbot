@@ -6,7 +6,7 @@ from ingestion.load_json import load_json
 
 def get_recent_announcements(limit: int = 5) -> list[dict]:
     """Read announcements directly from index.json, freshest first."""
-    data = load_json("data/raw/index.json")
+    data = load_json("frontend/data/index.json")
     announcements = data.get("announcements", [])
     return announcements[:limit]
 

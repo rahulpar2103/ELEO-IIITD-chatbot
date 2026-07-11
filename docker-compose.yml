@@ -11,6 +11,9 @@ services:
       - .env
     volumes:
       - ./data:/app/data
+      - ../frontend/data:/app/frontend/data
+      - ../frontend/faq:/app/frontend/faq
+      - ../frontend/policyandguidelines:/app/frontend/policyandguidelines
     depends_on:
       - redis
     restart: unless-stopped
@@ -22,6 +25,9 @@ services:
       - .env
     volumes:
       - ./data:/app/data
+      - ../frontend/data:/app/frontend/data
+      - ../frontend/faq:/app/frontend/faq
+      - ../frontend/policyandguidelines:/app/frontend/policyandguidelines
     depends_on:
       - redis
     restart: unless-stopped
