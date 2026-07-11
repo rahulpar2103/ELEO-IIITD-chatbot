@@ -39,6 +39,34 @@ def extract_lab_content(data: dict, source: str) -> list[dict]:
         if title and names:
             text = f"{title}: {', '.join(names)}"
             items.append({"text": text, "source": source, "section": "highlights"})
+
+    for resource in data.get("resources", []):
+        title = resource.get("title", "")
+        category = resource.get("category", "")
+        subtitle = resource.get("subtitle", "")
+        overview = resource.get("overview", "")
+        specs = resource.get("specs", [])
+        applications = resource.get("applications", [])
+
+        specs_text = "; ".join(
+            f"{s['key']}: {s['val']}" for s in specs if s.get("key") and s.get("val")
+        )
+        apps_text = ", ".join(applications)
+
+        parts = [
+            f"{lab_name} has {title} ({category}): {subtitle}.",
+        ]
+        if overview:
+            parts.append(overview)
+        if specs_text:
+            parts.append(f"Specifications — {specs_text}.")
+        if apps_text:
+            parts.append(f"Applications: {apps_text}.")
+
+        text = " ".join(parts).strip()
+        if text:
+            items.append({"text": text, "source": source, "section": "resources"})
+
     return items
 
 
@@ -110,15 +138,17 @@ def items_to_documents(items: list[dict]) -> list[Document]:
 
 
 if __name__ == "__main__":
+    from pathlib import Path
+    frontend_dir = Path("./frontend") if Path("./frontend").exists() else Path("../frontend")
     lab_files = ["be.json", "dc.json", "cil.json", "rf.json", "sho.json", "ael.json"]
 
     all_items = []
     for filename in lab_files:
-        data = load_json(f"data/raw/{filename}")
+        data = load_json(str(frontend_dir / "data" / filename))
         items = extract_lab_content(data, source=filename)
         all_items.extend(items)
 
-    index_data = load_json("data/raw/index.json")
+    index_data = load_json(str(frontend_dir / "data" / "index.json"))
     all_items.extend(extract_index_content(index_data, source="index.json"))
 
     documents = items_to_documents(all_items)

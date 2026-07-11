@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from langgraph.graph import StateGraph, MessagesState, START
 from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_google_genai import ChatGoogleGenerativeAI
-from tools.knowledge_tools import search_knowledge_base, get_recent_announcements
+from tools.knowledge_tools import search_knowledge_base, get_recent_announcements, search_lab_resources
 from langchain_core.messages import SystemMessage
 from langgraph.checkpoint.memory import InMemorySaver
 
@@ -44,12 +44,17 @@ SYSTEM_PROMPT = SystemMessage(content=(
     "For questions about recent news or announcements, you MUST call "
     "get_recent_announcements. Never answer from memory or training data.\n\n"
 
+    "IMPORTANT: When a user asks to LIST ALL equipment, resources, or instruments "
+    "in a specific lab (e.g. 'what equipment does Shannon Lab have', 'list all resources in sho'), "
+    "you MUST call search_lab_resources with the lab name. "
+    "Do NOT use search_knowledge_base for these list-all queries, as it may return incomplete results.\n\n"
+
     "Keep answers conversational, short, and crisp. "
-    "Never use markdown, asterisks, bullet points, or any special formatting. Plain text only."
+    "Never use em dashes, markdown, asterisks, bullet points, or any special formatting. Plain text only."
 ))
 
 
-tools = [search_knowledge_base, get_recent_announcements]
+tools = [search_knowledge_base, search_lab_resources, get_recent_announcements]
 primary_with_tools = primary_llm.bind_tools(tools)
 fallbacks_with_tools = [f_llm.bind_tools(tools) for f_llm in fallbacks]
 
