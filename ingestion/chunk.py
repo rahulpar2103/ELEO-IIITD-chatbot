@@ -16,18 +16,20 @@ if __name__ == "__main__":
     from ingestion.clean import clean_documents
     from pathlib import Path
 
-    raw_dir = Path("data/raw")
+    frontend_dir = Path("./frontend") if Path("./frontend").exists() else Path("../frontend")
 
     pdf_docs = []
-    for path in raw_dir.glob("*.pdf"):
+    for path in (frontend_dir / "faq").glob("*.pdf"):
+        pdf_docs.extend(load_pdf(str(path)))
+    for path in (frontend_dir / "policyandguidelines").glob("*.pdf"):
         pdf_docs.extend(load_pdf(str(path)))
 
     lab_files = ["be.json", "dc.json", "cil.json", "rf.json", "sho.json", "ael.json"]
     all_items = []
     for filename in lab_files:
-        data = load_json(f"data/raw/{filename}")
+        data = load_json(str(frontend_dir / "data" / filename))
         all_items.extend(extract_lab_content(data, source=filename))
-    index_data = load_json("data/raw/index.json")
+    index_data = load_json(str(frontend_dir / "data" / "index.json"))
     all_items.extend(extract_index_content(index_data, source="index.json"))
     json_docs = items_to_documents(all_items)
 

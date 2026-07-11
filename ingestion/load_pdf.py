@@ -6,8 +6,8 @@ def load_pdf(path: str):
     return loader.load()
 
 if __name__ == "__main__":
-    raw_dir = Path("data/raw")
-    pdf_paths = list(raw_dir.glob("*.pdf"))
+    frontend_dir = Path("./frontend") if Path("./frontend").exists() else Path("../frontend")
+    pdf_paths = list((frontend_dir / "faq").glob("*.pdf")) + list((frontend_dir / "policyandguidelines").glob("*.pdf"))
 
     all_pdf_docs = []
     for path in pdf_paths:
