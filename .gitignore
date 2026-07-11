@@ -14,3 +14,7 @@ docker-compose.override.yml
 # data artifacts that should not be committed
 data/raw/
 data/processed/
+
+# celery beat writes this file to track schedule state
+celerybeat-schedule
+celerybeat.pid
