@@ -12,10 +12,19 @@ from langgraph.checkpoint.memory import InMemorySaver
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(
-    model=os.environ.get("LLM_MODEL", "gemini-2.0-flash"),
-    google_api_key=os.environ.get("GEMINI_API_KEY"),
+api_key = os.environ.get("GEMINI_API_KEY")
+primary_model = os.environ.get("LLM_MODEL", "gemini-flash-lite-latest")
+fallback_models = ["gemini-2.5-flash", "gemini-3.5-flash"]
+
+primary_llm = ChatGoogleGenerativeAI(
+    model=primary_model,
+    google_api_key=api_key,
 )
+
+fallbacks = [
+    ChatGoogleGenerativeAI(model=model_name, google_api_key=api_key)
+    for model_name in fallback_models
+]
 SYSTEM_PROMPT = SystemMessage(content=(
     "You are ELEO, the official assistant for the ECE Labs at IIIT Delhi. "
     "Your ONLY purpose is to answer questions about IIIT Delhi ECE Labs: "
@@ -41,7 +50,10 @@ SYSTEM_PROMPT = SystemMessage(content=(
 
 
 tools = [search_knowledge_base, get_recent_announcements]
-llm_with_tools = llm.bind_tools(tools)
+primary_with_tools = primary_llm.bind_tools(tools)
+fallbacks_with_tools = [f_llm.bind_tools(tools) for f_llm in fallbacks]
+
+llm_with_tools = primary_with_tools.with_fallbacks(fallbacks_with_tools)
 
 
 def agent_node(state: MessagesState):

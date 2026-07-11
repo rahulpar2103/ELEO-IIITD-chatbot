@@ -11,7 +11,7 @@ index/           build the FAISS index
 data/            stores the built FAISS index and processed data
 retrieval/       load the vector store, expand lab abbreviations, fetch announcements
 tools/           LangChain tools that the agent can call
-generation/      LangGraph agent graph with memory
+generation/      LangGraph agent graph with memory and LLM fallback chain
 api/             FastAPI layer (schemas, rate limiter, service, router, app)
 ```
 
@@ -24,6 +24,8 @@ GEMINI_API_KEY=your_key_here
 EMBEDDING_MODEL=models/gemini-embedding-2
 LLM_MODEL=gemini-flash-lite-latest
 ```
+
+*Note: The chatbot utilizes a native LangChain fallback chain. If the primary model `LLM_MODEL` (e.g., `gemini-flash-lite-latest`) fails due to rate limits or transient errors, it will automatically fallback to `gemini-2.5-flash` followed by `gemini-3.5-flash` using the same `GEMINI_API_KEY` without any extra charges.*
 
 The FAISS index needs to be built once before running the API. Run the ingestion and indexing scripts in order if starting fresh.
 
