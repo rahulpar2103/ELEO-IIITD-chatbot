@@ -7,7 +7,12 @@ from retrieval.announcements import get_recent_announcements as _get_recent_anno
 
 @tool
 def search_knowledge_base(query: str) -> str:
-    """Search the ECE Labs knowledge base for info about labs, courses, projects, FAQs, team, and policies."""
+    """Search the ECE Labs knowledge base.
+
+    Use this for any question about labs (BE, AEL, CIL, DC, RF, SHO),
+    courses, equipment, facilities, team members, policies, and FAQs.
+    Returns the most relevant text chunks from the knowledge base.
+    """
     vectorstore = load_vectorstore()
     expanded = expand_query(query)
     results = vectorstore.similarity_search(expanded, k=4)
@@ -16,7 +21,11 @@ def search_knowledge_base(query: str) -> str:
 
 @tool
 def get_recent_announcements(limit: int = 5) -> str:
-    """Get the most recent announcements from the ECE Labs website. Use this for questions about what's new or recent."""
+    """Fetch the latest announcements from the ECE Labs website.
+
+    Use this when the user asks what is new, recent notices, latest updates,
+    or anything time-sensitive. Returns date and title for each announcement.
+    """
     announcements = _get_recent_announcements(limit)
     return "\n".join(f"{a['date']} - {a['title']}" for a in announcements)
 

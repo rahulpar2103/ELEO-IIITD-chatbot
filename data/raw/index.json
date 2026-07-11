@@ -3,11 +3,20 @@
     "announcementMax": 6,
     "labsMax": 6,
     "galleryMax": 7,
-    "projectsMax": 3,
+    "projectsMax": 4,
     "policiesMax": 5,
     "teamMax": 4
   },
   "announcements": [
+    {
+      "type": "maintainence",
+      "isNew": true,
+      "date": "July 20, 2026",
+      "title": "The website will be down for 2 days for regular maintainence",
+      "description": "Some serious hacking activity has been reported.",
+      "linkText": "Read more",
+      "link": "#"
+    },
     {
       "type": "event",
       "isNew": true,
@@ -189,8 +198,14 @@
     },
     {
       "date": "September 2022",
-      "title": "ELEO",
-      "description": "ECE Lab Enquiry Officer (ELEO) is a chatbot designed to resolve queries related to ECE Labs. It assists users within seconds and was designed by B.Tech student Jayan Pahuja under the guidance of Sana Ali Naqvi & Khagendra Joshi.",
+      "title": "ELEO Chatbot (v1)",
+      "description": "ECE Lab Enquiry Officer (ELEO) is a matching-based chatbot designed to resolve queries related to ECE Labs. It was designed by B.Tech student Jayan Pahuja under the guidance of Sana Ali Naqvi & Khagendra Joshi.",
+      "image": "images/blog/1.jpg"
+    },
+    {
+      "date": "July 2026",
+      "title": "ELEO AI Assistant (v2)",
+      "description": "ELEO has been upgraded to a generative AI assistant powered by large language models (LLMs). The AI chatbot integration was developed by Rahul Pardasani (M.Tech CSE 2025). Note that the ECE Labs website itself was a team project built by Rahul Pardasani, Rohit Kumar, and Reehan Sarmah.",
       "image": "images/blog/1.jpg"
     },
     {
@@ -412,5 +427,35 @@
         }
       ]
     }
-  ]
+  ],
+  "credits": {
+    "chatbot": {
+      "title": "ELEO AI Chatbot",
+      "developer": "Rahul Pardasani",
+      "roll": "MT25035",
+      "program": "M.Tech CSE",
+      "batch": "2025",
+      "institute": "IIIT Delhi"
+    },
+    "website": {
+      "title": "ECE Labs Website (v2)",
+      "team": [
+        {
+          "name": "Rahul Pardasani",
+          "roll": "MT25035"
+        },
+        {
+          "name": "Rohit Kumar",
+          "roll": "MT25037"
+        },
+        {
+          "name": "Reehan Sarmah",
+          "roll": "MT25036"
+        }
+      ],
+      "program": "M.Tech CSE",
+      "batch": "2025",
+      "institute": "IIIT Delhi"
+    }
+  }
 }

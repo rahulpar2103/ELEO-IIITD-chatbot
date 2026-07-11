@@ -75,6 +75,27 @@ def extract_index_content(data: dict, source: str) -> list[dict]:
         if text:
             items.append({"text": text, "source": source, "section": "team"})
 
+    credits = data.get("credits", {})
+    chatbot_c = credits.get("chatbot", {})
+    if chatbot_c:
+        text = (
+            f"The ELEO AI chatbot was developed by {chatbot_c.get('developer', '')} "
+            f"(Roll No. {chatbot_c.get('roll', '')}, {chatbot_c.get('program', '')} "
+            f"batch {chatbot_c.get('batch', '')} at {chatbot_c.get('institute', '')})."
+        )
+        items.append({"text": text, "source": source, "section": "credits"})
+    website_c = credits.get("website", {})
+    if website_c:
+        members = ", ".join(
+            f"{m['name']} ({m['roll']})" for m in website_c.get("team", [])
+        )
+        text = (
+            f"The ECE Labs website was built by {members}, "
+            f"all from {website_c.get('program', '')} batch {website_c.get('batch', '')} "
+            f"at {website_c.get('institute', '')}."
+        )
+        items.append({"text": text, "source": source, "section": "credits"})
+
     return items
 
 
