@@ -1,4 +1,6 @@
 import json
+from typing import Any, Iterable
+
 from langchain_core.documents import Document
 
 
@@ -17,6 +19,101 @@ LAB_NAMES = {
 }
 
 
+def _normalize_resource_groups(data: dict) -> list[dict]:
+    """Return resource groups from either the new grouped schema or the older flat one."""
+    resources = data.get("resources", [])
+
+    # New schema:
+    # {
+    #   "resources": {
+    #       "total": ...,
+    #       "groupCount": ...,
+    #       "groups": [ ... ]
+    #   }
+    # }
+    if isinstance(resources, dict):
+        groups = resources.get("groups")
+        if isinstance(groups, list):
+            return groups
+        # Some intermediate variants may store a direct flat list under resources.items/resources.list.
+        for key in ("items", "list", "resources"):
+            maybe = resources.get(key)
+            if isinstance(maybe, list):
+                return [{
+                    "id": "resources",
+                    "name": "Resources",
+                    "count": len(maybe),
+                    "isMisc": False,
+                    "items": maybe,
+                }]
+
+    # Another possible grouped shape: {"groups": [...]}
+    if isinstance(data.get("groups"), list):
+        return data["groups"]
+
+    # Older flat schema: [{"title": ..., "category": ...}, ...]
+    if isinstance(resources, list):
+        return [{
+            "id": "resources",
+            "name": "Resources",
+            "count": len(resources),
+            "isMisc": False,
+            "items": resources,
+        }]
+
+    return []
+
+
+def _clean_text(value: Any) -> str:
+    if value is None:
+        return ""
+    text = str(value).replace("\u00a0", " ").strip()
+    return "" if text.lower() == "nan" else " ".join(text.split())
+
+
+def _resource_item_text(lab_name: str, group_name: str, item: dict[str, Any]) -> str:
+    title = _clean_text(item.get("title") or item.get("Resources") or item.get("name") or "Untitled resource")
+    original_type = _clean_text(item.get("originalType") or item.get("group") or group_name)
+    quantity = item.get("quantity", item.get("qty"))
+    quantity_text = _clean_text(quantity) if quantity is not None and _clean_text(quantity) else "unspecified"
+    status = _clean_text(item.get("status")) or "unspecified"
+    remark = _clean_text(item.get("remark") or item.get("note") or item.get("description"))
+    link = _clean_text(item.get("link") or item.get("quickLink") or item.get("referenceLink"))
+
+    parts = [
+        f"{lab_name} resource",
+        f"Group: {group_name}",
+        f"Item: {title}",
+    ]
+    if original_type and original_type != group_name:
+        parts.append(f"Original type: {original_type}")
+    parts.append(f"Quantity: {quantity_text}")
+    parts.append(f"Status: {status}")
+    if remark:
+        parts.append(f"Remark: {remark}")
+    if link:
+        parts.append(f"Reference: {link}")
+    return " | ".join(parts)
+
+
+def _resource_group_text(lab_name: str, group: dict[str, Any]) -> str:
+    group_name = _clean_text(group.get("name") or "Resources")
+    count = group.get("count")
+    items = group.get("items") or []
+    titles = [
+        _clean_text(item.get("title") or item.get("Resources") or item.get("name") or "")
+        for item in items
+    ]
+    titles = [t for t in titles if t]
+    summary = ", ".join(titles[:20])
+    text = f"{lab_name} resource group | Group: {group_name} | Count: {count if count is not None else len(items)}"
+    if summary:
+        text += f" | Items: {summary}"
+        if len(titles) > 20:
+            text += f", and {len(titles) - 20} more"
+    return text
+
+
 def extract_lab_content(data: dict, source: str) -> list[dict]:
     items = []
     lab_name = LAB_NAMES.get(source, source)
@@ -26,6 +123,7 @@ def extract_lab_content(data: dict, source: str) -> list[dict]:
         if title:
             text = f"{title} is a course taught in {lab_name}."
             items.append({"text": text, "source": source, "section": "courses"})
+
     for project in data.get("projects", []):
         title = project.get("title", "")
         date = project.get("date", "")
@@ -33,6 +131,7 @@ def extract_lab_content(data: dict, source: str) -> list[dict]:
         text = f"{title} ({date}): {description}".strip()
         if text:
             items.append({"text": text, "source": source, "section": "projects"})
+
     for highlight in data.get("highlights", []):
         title = highlight.get("title", "")
         names = [n for n in highlight.get("names", []) if n and n != "-"]
@@ -40,31 +139,15 @@ def extract_lab_content(data: dict, source: str) -> list[dict]:
             text = f"{title}: {', '.join(names)}"
             items.append({"text": text, "source": source, "section": "highlights"})
 
-    for resource in data.get("resources", []):
-        title = resource.get("title", "")
-        category = resource.get("category", "")
-        subtitle = resource.get("subtitle", "")
-        overview = resource.get("overview", "")
-        specs = resource.get("specs", [])
-        applications = resource.get("applications", [])
+    # Resource extraction supports both the older flat array and the new grouped inventory.
+    for group in _normalize_resource_groups(data):
+        group_name = _clean_text(group.get("name") or "Resources")
+        group_text = _resource_group_text(lab_name, group)
+        items.append({"text": group_text, "source": source, "section": "resources_group"})
 
-        specs_text = "; ".join(
-            f"{s['key']}: {s['val']}" for s in specs if s.get("key") and s.get("val")
-        )
-        apps_text = ", ".join(applications)
-
-        parts = [
-            f"{lab_name} has {title} ({category}): {subtitle}.",
-        ]
-        if overview:
-            parts.append(overview)
-        if specs_text:
-            parts.append(f"Specifications — {specs_text}.")
-        if apps_text:
-            parts.append(f"Applications: {apps_text}.")
-
-        text = " ".join(parts).strip()
-        if text:
+        group_items = group.get("items") or []
+        for item in group_items:
+            text = _resource_item_text(lab_name, group_name, item)
             items.append({"text": text, "source": source, "section": "resources"})
 
     return items
