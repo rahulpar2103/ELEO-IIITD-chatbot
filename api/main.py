@@ -42,6 +42,7 @@ async def root():
     return {"message": "ELEO Chatbot & Content API is running", "health": "/health", "admin": "/admin"}
 
 @app.get("/health")
+@app.head("/health")
 async def health_check():
     return {"status": "ok"}
 
