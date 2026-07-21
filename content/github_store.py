@@ -33,7 +33,10 @@ class GitHubContentStore(ContentStore):
             sha = data.get("sha", "")
             content_b64 = data.get("content", "")
             # Clean up newlines in base64 payload from GitHub
-            content_str = base64.b64decode(content_b64.replace("\n", "")).decode('utf-8')
+            # Decode with utf-8-sig to strip any BOM from files edited on Windows
+            content_str = base64.b64decode(content_b64.replace("\n", "")).decode('utf-8-sig')
+            # Strip any residual BOM character
+            content_str = content_str.lstrip('\ufeff')
             content_dict = json.loads(content_str)
             return content_dict, sha
         except urllib.error.HTTPError as e:
