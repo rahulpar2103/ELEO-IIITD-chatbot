@@ -18,14 +18,18 @@ MANIFEST_PATH = "data/faiss_index_manifest.json"
 
 
 def build_all_documents():
-    frontend_dir = Path("./frontend") if Path("./frontend").exists() else Path("../frontend")
+    pdf_base = Path("data/pdfs")
+    if not pdf_base.exists():
+        pdf_base = Path("./frontend") if Path("./frontend").exists() else Path("../frontend")
 
     pdf_docs = []
     # Load PDFs from faq and policyandguidelines directories
-    for path in (frontend_dir / "faq").glob("*.pdf"):
+    for path in (pdf_base / "faq").glob("*.pdf"):
         pdf_docs.extend(load_pdf(str(path)))
-    for path in (frontend_dir / "policyandguidelines").glob("*.pdf"):
+    for path in (pdf_base / "policyandguidelines").glob("*.pdf"):
         pdf_docs.extend(load_pdf(str(path)))
+
+    frontend_dir = Path("./frontend") if Path("./frontend").exists() else Path("../frontend")
 
     lab_files = ["be.json", "dc.json", "cil.json", "rf.json", "sho.json", "ael.json"]
     all_items = []
