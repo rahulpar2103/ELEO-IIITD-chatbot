@@ -37,7 +37,12 @@ app.add_middleware(
 app.include_router(chat_router)
 app.include_router(content_router)
 
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
 # Serve the portal UI at /admin
 portal_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "portal_public"))
 if os.path.exists(portal_dir):
     app.mount("/admin", StaticFiles(directory=portal_dir, html=True), name="portal")
+
