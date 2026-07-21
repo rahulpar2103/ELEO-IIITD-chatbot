@@ -13,8 +13,14 @@ def load_json(path: str) -> dict:
             content, _ = store.read(filename)
             return content
         except Exception:
-            # Fallback to local open if store is not configured or fails
-            pass
+            # Fallback to local file content store if GitHub/primary store fails
+            try:
+                from content.local_store import LocalFileContentStore
+                local_store = LocalFileContentStore()
+                content, _ = local_store.read(filename)
+                return content
+            except Exception:
+                pass
             
     with open(path, "r", encoding="utf-8-sig") as f:
         return json.load(f)

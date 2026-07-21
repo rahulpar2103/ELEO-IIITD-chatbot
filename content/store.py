@@ -54,7 +54,7 @@ def get_content_store() -> ContentStore:
             owner=os.environ.get("GITHUB_REPO_OWNER", "rahulpar2103"),
             repo=os.environ.get("GITHUB_REPO_NAME", "ELEO-IIITD-chatbot"),
             branch=os.environ.get("GITHUB_BRANCH", "master"),
-            data_dir_path=os.environ.get("GITHUB_DATA_DIR_PATH", "backend/data/content")
+            data_dir_path=os.environ.get("GITHUB_DATA_DIR_PATH", "data/content")
         )
     else:
         from content.local_store import LocalFileContentStore
