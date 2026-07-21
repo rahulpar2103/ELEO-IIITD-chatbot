@@ -203,6 +203,12 @@ let activeSection = '';
 let currentEditIndex = -1;
 let currentSHA = '';
 
+const API_BASE = (
+  window.location.hostname === 'localhost' || 
+  window.location.hostname === '127.0.0.1' ||
+  window.location.pathname.startsWith('/admin')
+) ? '' : 'https://eleo-iiitd-chatbot.onrender.com';
+
 // DOM Elements
 const fileSelect = document.getElementById('fileSelect');
 const editorContainer = document.getElementById('editorContainer');
@@ -230,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Fetch list of editable files from server
 function fetchFileList() {
-  fetch('/content')
+  fetch(`${API_BASE}/content`)
     .then(res => res.json())
     .then(files => {
       files.forEach(file => {
@@ -338,7 +344,7 @@ function sortAnnouncements() {
 
 // Load JSON data file
 function loadFile(filename) {
-  fetch(`/content/${filename}`)
+  fetch(`${API_BASE}/content/${filename}`)
     .then(res => {
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
       currentSHA = res.headers.get('X-Content-SHA') || res.headers.get('ETag') || '';
@@ -787,7 +793,7 @@ function saveCurrentFile() {
     headers['If-Match'] = `"${currentSHA}"`;
   }
 
-  fetch(`/content/${currentFilename}`, {
+  fetch(`${API_BASE}/content/${currentFilename}`, {
     method: 'PUT',
     headers: headers,
     body: JSON.stringify(currentData)
