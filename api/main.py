@@ -37,6 +37,10 @@ app.add_middleware(
 app.include_router(chat_router)
 app.include_router(content_router)
 
+@app.get("/")
+async def root():
+    return {"message": "ELEO Chatbot & Content API is running", "health": "/health", "admin": "/admin"}
+
 @app.get("/health")
 async def health_check():
     return {"status": "ok"}
