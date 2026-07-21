@@ -10,3 +10,4 @@ tests/
 chatbot/
 # processed data is not needed in image, raw and index come via bind mount
 data/processed/
+data/content/backups/
