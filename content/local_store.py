@@ -48,6 +48,9 @@ class LocalFileContentStore(ContentStore):
         with open(path, "r", encoding="utf-8-sig") as f:
             raw_content = f.read()
         
+        # Strip any residual BOM that might have slipped past utf-8-sig
+        raw_content = raw_content.lstrip('\ufeff')
+        
         content_dict = json.loads(raw_content)
         sha = self._compute_git_sha(raw_content)
         return content_dict, sha
@@ -59,6 +62,7 @@ class LocalFileContentStore(ContentStore):
         if path.exists() and sha:
             with open(path, "r", encoding="utf-8-sig") as f:
                 existing_raw = f.read()
+            existing_raw = existing_raw.lstrip('\ufeff')
             current_sha = self._compute_git_sha(existing_raw)
             if sha != current_sha:
                 raise ContentConflictError(
