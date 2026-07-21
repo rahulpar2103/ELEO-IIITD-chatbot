@@ -1,528 +1,537 @@
-﻿{
-    "settings": {
-        "announcementMax": 10,
-        "labsMax": 9,
-        "galleryMax": 7,
-        "projectsMax": 8,
-        "policiesMax": 5,
-        "teamMax": 4
+{
+  "settings": {
+    "announcementMax": 10,
+    "labsMax": 9,
+    "galleryMax": 7,
+    "projectsMax": 8,
+    "policiesMax": 5,
+    "teamMax": 4
+  },
+  "announcements": [
+    {
+      "type": "maintainence",
+      "isNew": false,
+      "date": "July 21, 2026",
+      "title": "Let Her Go",
+      "description": "Well you only need the light when its burning low,\nOnly miss the sun when it starts to snow, only know you love her when you let her go.",
+      "linkText": "",
+      "link": ""
     },
-    "announcements": [
-        {
-            "type": "maintainence",
-            "isNew": false,
-            "date": "July 21, 2026",
-            "title": "Let Her Go",
-            "description": "Well you only need the light when its burning low,\nOnly miss the sun when it starts to snow, only know you love her when you let her go.",
-            "linkText": "",
-            "link": ""
-        },
-        {
-            "type": "maintainence",
-            "isNew": false,
-            "date": "July 21, 2026",
-            "title": "Choo lo",
-            "description": "à¤›à¥‚ à¤²à¥‹ à¤œà¥‹ à¤®à¥à¤à¥‡ à¤¤à¥à¤® à¤•à¤­à¥€,\nà¤–à¥‹ à¤¨à¤¾ à¤œà¤¾à¤Šà¤ à¤®à¥ˆà¤‚ à¤°à¤¾à¤¤-à¤¦à¤¿à¤¨\n",
-            "linkText": "",
-            "link": ""
-        },
-        {
-            "type": "maintainence",
-            "isNew": false,
-            "date": "July 21, 2026",
-            "title": "test",
-            "description": "test",
-            "linkText": "",
-            "link": ""
-        },
-        {
-            "type": "event",
-            "isNew": true,
-            "date": "July 15, 2026",
-            "title": "Waddupppp!",
-            "description": "Bleh.",
-            "linkText": "Read more",
-            "link": "#"
-        },
-        {
-            "type": "update",
-            "isNew": false,
-            "date": "July 8, 2026",
-            "title": "Updated Issue/Return Policy â€” Effective Aug 1",
-            "description": "New component return timelines and late-fee structure have been introduced. Please review the updated policy PDF before your next checkout.",
-            "linkText": "View policy",
-            "link": "policyandguidelines/Issue%20return.pdf"
-        },
-        {
-            "type": "deadline",
-            "isNew": false,
-            "date": "June 20, 2026",
-            "title": "Summer Project Submissions Due",
-            "description": "All summer project reports and component returns must be completed by June 30. Contact the lab team for extension requests.",
-            "linkText": "Read more",
-            "link": "#"
-        },
-        {
-            "type": "general",
-            "isNew": false,
-            "date": "June 10, 2026",
-            "title": "New Lab Manual Available â€” RF Lab",
-            "description": "The updated RF & Applied Electromagnetics Lab manual is now available for download. Covers all new experiments added for the Monsoon semester.",
-            "linkText": "Read more",
-            "link": "#"
-        }
-    ],
-    "labs": [
-        {
-            "num": "01",
-            "name": "Digital Circuits Lab",
-            "image": "images/labs/dc.jpg",
-            "room": "Room 301",
-            "title": "Digital Circuits Lab",
-            "description": "Dedicated to concepts and implementation of basic circuits design - a teaching lab supporting course projects for up to 40 students per session.",
-            "link": "dc.html"
-        },
-        {
-            "num": "02",
-            "name": "Circuits & Innovation Lab",
-            "image": "images/labs/cil.jpg",
-            "room": "Room 302",
-            "title": "Circuits & Innovation Lab",
-            "description": "Analog & digital circuits, microcontrollers - 50 students per session.",
-            "link": "cil.html"
-        },
-        {
-            "num": "03",
-            "name": "Basic Electronics Lab",
-            "image": "images/labs/be.jpg",
-            "room": "Room 303",
-            "title": "Basic Electronics Lab",
-            "description": "Digital circuits, basic electronics, circuit theory & devices - 50 students per session.",
-            "link": "https://belab.iiitd.ac.in/"
-        },
-        {
-            "num": "04",
-            "name": "RF & Applied Electromagnetics Lab",
-            "image": "images/labs/rf.jpg",
-            "room": "Room 304",
-            "title": "RF & Applied Electromagnetics Lab",
-            "description": "High-frequency instruments, licensed software, PCB fabrication - research and course projects.",
-            "link": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
-        },
-        {
-            "num": "05",
-            "name": "Shannon Lab",
-            "image": "images/labs/shannon.jpg",
-            "room": "Room 305",
-            "title": "Shannon Lab",
-            "description": "Wireless communication, signal processing, robotics, automation - teaching and research.",
-            "link": "sho.html"
-        },
-        {
-            "num": "06",
-            "name": "Advanced ECE Lab",
-            "image": "images/labs/ael.jpeg",
-            "room": "A-616 Â· R&D Building",
-            "title": "Advanced ECE Lab",
-            "description": "5G testbed, RIS/ORIS setups, D2D communication, real-time signal processing.",
-            "link": "ael.html"
-        },
-        {
-            "num": "07",
-            "name": "Applied Electronics Engineering Lab",
-            "image": "images/labs/cil.jpg",
-            "room": "Room 306 Â· Lecture Hall Complex",
-            "title": "Applied Electronics Engineering Lab",
-            "description": "Hands-on applied electronics, embedded systems, and engineering design projects.",
-            "link": "https://aeelab.iiitd.ac.in/"
-        },
-        {
-            "num": "08",
-            "name": "M. Tech. Lab",
-            "image": "images/labs/ael.jpeg",
-            "room": "A617 Â· R&D Building",
-            "title": "M. Tech. Lab",
-            "description": "Dedicated workspace for postgraduate research and thesis projects in ECE.",
-            "link": "https://mtechlab.iiitd.ac.in/"
-        },
-        {
-            "num": "09",
-            "name": "RF Characterization Facility",
-            "image": "images/labs/rf.jpg",
-            "room": "Ground Floor Â· Academic Building",
-            "title": "RF Characterization Facility",
-            "description": "Specialized RF testing, antenna characterization, and high-frequency measurements.",
-            "link": "https://sites.google.com/iiitd.ac.in/rfcharacterizationfacility?pli=1"
-        }
-    ],
-    "gallery": [
-        {
-            "category": "creative",
-            "image": "images/portfolio/01.jpg",
-            "alt": "TinkerHack",
-            "label": "TinkerHack",
-            "description": "TinkerHack is our flagship hackathon event where students collaborate on innovative electronics and embedded systems projects in a 24-hour challenge.",
-            "type": "image"
-        },
-        {
-            "category": "creative",
-            "image": "images/portfolio/03.jpg",
-            "alt": "Electrivire",
-            "label": "Electrivire",
-            "description": "Electrivire is an annual technical showcase where ECE students present their semester projects spanning circuits, signal processing, and wireless communication.",
-            "type": "image"
-        },
-        {
-            "category": "corporate",
-            "image": "images/portfolio/04.jpg",
-            "alt": "RF Workshop",
-            "label": "RF Workshop",
-            "description": "Our RF & Wireless workshop brings industry experts to train students on radio frequency engineering, antenna design, and spectrum analysis using live equipment.",
-            "type": "image"
-        },
-        {
-            "category": "creative",
-            "image": "images/portfolio/05.jpg",
-            "alt": "HACKiT",
-            "label": "HACKiT",
-            "description": "HACKiT is a collaborative coding & hardware hack event organized by ECE Labs for students passionate about building real-world solutions from scratch.",
-            "type": "image"
-        },
-        {
-            "category": "corporate",
-            "image": "images/portfolio/06.jpg",
-            "alt": "V2V Workshop",
-            "label": "V2V Workshop",
-            "description": "The V2V (Vehicle-to-Vehicle) Communication Workshop explored cutting-edge DSRC and C-V2X protocols with live demonstrations and hands-on experiments.",
-            "type": "image"
-        },
-        {
-            "category": "corporate",
-            "image": "images/portfolio/07.jpg",
-            "alt": "NS3 Workshop",
-            "label": "NS3 Workshop",
-            "description": "The NS3 Network Simulator Workshop trained participants to simulate complex network topologies and analyze protocol behavior using the NS-3 open-source platform.",
-            "type": "image"
-        },
-        {
-            "category": "tvideos",
-            "image": "images/portfolio/02.mp4",
-            "alt": "Lab Video",
-            "label": "Lab Video",
-            "description": "A glimpse inside the ECE Labs â€” our state-of-the-art facilities, dedicated research engineers, and vibrant student community working together every day.",
-            "type": "video",
-            "poster": "images/portfolio/03.jpg"
-        }
-    ],
-    "projects": [
-        {
-            "date": "March 2021",
-            "title": "Touchless Tap",
-            "description": "ECE Lab developed a cost-effective sensor-based water tap that works when it detects your hand under the nozzle. Designed by Research Engineers Sana & Khagendra.",
-            "image": "images/blog/7.jpg"
-        },
-        {
-            "date": "September 2022",
-            "title": "ELEO Chatbot (v1)",
-            "description": "The first version of ELEO (ECE Lab Enquiry Officer) was a simple rule-based, keyword-matching and word-search chatbot â€” not AI-powered. It could only return pre-written single responses to recognized keywords. It was built by B.Tech student Jayan Pahuja under the guidance of Sana Ali Naqvi & Khagendra Joshi. This version has since been completely replaced by the AI-powered v2.",
-            "image": "images/blog/1.jpg"
-        },
-        {
-            "date": "July 2026",
-            "title": "ELEO AI Assistant (v2)",
-            "description": "The current ELEO chatbot is a fully AI-powered assistant, built from scratch by Rahul Pardasani (M.Tech CSE 2025, Roll No. MT25035). It uses large language models (LLMs), a RAG (Retrieval-Augmented Generation) pipeline with a FAISS vector knowledge base, and a LangGraph-based multi-step reasoning agent. This is a complete rebuild with no relation to the old keyword-search v1. Rahul Pardasani developed the ELEO AI chatbot.",
-            "image": "images/blog/1.jpg"
-        },
-        {
-            "date": "July 2026",
-            "title": "ECE Labs Website (v2)",
-            "description": "The official ECE Labs website was upgraded and built as a team project by Rahul Pardasani, Rohit Kumar, and Reehan Sarmah, all from the M.Tech CSE batch of 2025.",
-            "image": "images/blog/1.jpg"
-        },
-        {
-            "date": "November 2019",
-            "title": "Light Automation",
-            "description": "A summer project aimed at making ECE-Labs fully automated, beginning with lights using Arduino, PIR sensors, relays, and lab resources. Designed by Paritosh & Amisha under the guidance of Engineer Abhishek Kumar.",
-            "image": "images/blog/03.jpg"
-        },
-        {
-            "date": "January 2020",
-            "title": "Smart Energy Monitor",
-            "description": "A real-time power consumption monitoring system for ECE lab equipment using IoT sensors and a live dashboard. Built by B.Tech students under Engineer Abhishek Kumar.",
-            "image": "images/blog/03.jpg"
-        },
-        {
-            "date": "August 2021",
-            "title": "RF Signal Analyser",
-            "description": "A low-cost spectrum analyser prototype to measure RF signals in the 100 MHzâ€“2 GHz range, designed and tested inside the RF Lab by M.Tech research students.",
-            "image": "images/blog/7.jpg"
-        },
-        {
-            "date": "March 2023",
-            "title": "Gesture-Controlled Robot",
-            "description": "A wireless robot controlled via hand gestures captured through a flex-sensor glove. Demonstrated at IIIT Delhi's annual tech fest as an ECE Lab showcase project.",
-            "image": "images/blog/1.jpg"
-        },
-        {
-            "date": "October 2023",
-            "title": "Embedded OS Scheduler",
-            "description": "A minimal preemptive task scheduler implemented on ARM Cortex-M4 for embedded systems coursework, integrating priority queues and round-robin scheduling.",
-            "image": "images/blog/03.jpg"
-        },
-        {
-            "date": "February 2024",
-            "title": "Autonomous Line Follower",
-            "description": "A PID-controlled line-following robot built using IR sensors and an Arduino Mega, achieving sub-10ms response times on a competitive track layout.",
-            "image": "images/blog/7.jpg"
-        },
-        {
-            "date": "May 2025",
-            "title": "Lab Equipment Tracker",
-            "description": "A full-stack web app to track issue, return, and availability status of lab equipment in real time, reducing manual inventory overhead by over 60%.",
-            "image": "images/blog/1.jpg"
-        }
-    ],
-    "policies": [
-        {
-            "name": "Issue / Return",
-            "tag": "PDF Document",
-            "link": "policyandguidelines/Issue%20return.pdf"
-        },
-        {
-            "name": "Locker",
-            "tag": "PDF Document",
-            "link": "policyandguidelines/locker.pdf"
-        },
-        {
-            "name": "Safety & Security",
-            "tag": "PDF Document",
-            "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf"
-        },
-        {
-            "name": "Lab Guidelines",
-            "tag": "PDF Document",
-            "link": "policyandguidelines/lab%20guidelines.pdf"
-        },
-        {
-            "name": "Student Guidelines",
-            "tag": "PDF Document",
-            "link": "policyandguidelines/student%20guidelines.pdf"
-        }
-    ],
-    "faq": [
-        {
-            "topic": "Lab Related",
-            "questions": [
-                "How many ECE-Labs are there",
-                "Where are ECE-Labs located",
-                "Seating capacity of the Labs",
-                "Who manages ECE Labs",
-                "Events organized by the labs"
-            ],
-            "pdfLink": "faq/lab.pdf",
-            "pdfLabel": "Open Answers PDF"
-        },
-        {
-            "topic": "Course Related",
-            "questions": [
-                "Courses conducted in ECE Labs",
-                "Where can I find lab handouts",
-                "Where can I get resources for my project",
-                "How can I get help in course related doubts",
-                "Can I access lab for my course work"
-            ],
-            "pdfLink": "faq/Course.pdf",
-            "pdfLabel": "Open Answers PDF"
-        },
-        {
-            "topic": "Facilities Related",
-            "questions": [
-                "What are the issue/return policies",
-                "Where can I find sensors/actuators",
-                "What are the guidelines for students",
-                "What are the safety precautions available",
-                "Where can I find the inventory list of resources"
-            ],
-            "pdfLink": "faq/Facilities.pdf",
-            "pdfLabel": "Open Answers PDF"
-        }
-    ],
-    "team": [
-        {
-            "name": "Rahul Gupta",
-            "role": "Technical Officer (Research)",
-            "bio": "10+ years of experience with papers in top journals and conferences in the RF domain.",
-            "photo": "images/team/02.jpg"
-        },
-        {
-            "name": "Sana Ali Naqvi",
-            "role": "Deputy Technical Officer (Research)",
-            "bio": "10+ years in power systems, power electronics, and wearable domains.",
-            "photo": "images/team/08.jpg"
-        },
-        {
-            "name": "Khagendra Joshi",
-            "role": "Deputy Technical Officer (Research)",
-            "bio": "10+ years in wireless communication domain, published in top conferences.",
-            "photo": "images/team/9.jpg"
-        },
-        {
-            "name": "Abhishek Kumar",
-            "role": "Junior Technical Officer (SG)",
-            "bio": "10+ years in digital processing and test & measurement industries.",
-            "photo": "images/team/01.jpg"
-        }
-    ],
-    "facilities": [
-        {
-            "num": "01",
-            "title": "Hardware Facilities",
-            "items": [
-                {
-                    "label": "Digital Circuits Lab",
-                    "href": "dc.html"
-                },
-                {
-                    "label": "Circuits & Innovation Lab",
-                    "href": "cil.html"
-                },
-                {
-                    "label": "Basic Electronics Lab",
-                    "href": "https://belab.iiitd.ac.in/"
-                },
-                {
-                    "label": "RF & Applied Electromagnetics Lab",
-                    "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
-                },
-                {
-                    "label": "Shannon Lab",
-                    "href": "sho.html"
-                }
-            ]
-        },
-        {
-            "num": "02",
-            "title": "Software Facilities",
-            "items": [
-                {
-                    "label": "Digital Circuits Lab",
-                    "href": "dc.html"
-                },
-                {
-                    "label": "Circuits & Innovation Lab",
-                    "href": "cil.html"
-                },
-                {
-                    "label": "Basic Electronics Lab",
-                    "href": "https://belab.iiitd.ac.in/"
-                },
-                {
-                    "label": "RF & Applied Electromagnetics Lab",
-                    "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
-                },
-                {
-                    "label": "Shannon Lab",
-                    "href": "sho.html"
-                }
-            ]
-        },
-        {
-            "num": "03",
-            "title": "Issue / Return Facility",
-            "items": [
-                {
-                    "label": "Circuits & Innovation Lab",
-                    "href": "cil.html"
-                },
-                {
-                    "label": "Basic Electronics Lab",
-                    "href": "https://belab.iiitd.ac.in/"
-                },
-                {
-                    "label": "RF & Applied Electromagnetics Lab",
-                    "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
-                },
-                {
-                    "label": "Shannon Lab",
-                    "href": "sho.html"
-                }
-            ]
-        },
-        {
-            "num": "04",
-            "title": "Cabinet Facility",
-            "items": [
-                {
-                    "label": "RF & Applied Electromagnetics Lab",
-                    "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
-                },
-                {
-                    "label": "Shannon Lab",
-                    "href": "sho.html"
-                }
-            ]
-        },
-        {
-            "num": "05",
-            "title": "Lab Manuals / Handouts",
-            "items": [
-                {
-                    "label": "Circuits & Innovation Lab",
-                    "href": "cil.html"
-                },
-                {
-                    "label": "Basic Electronics Lab",
-                    "href": "https://belab.iiitd.ac.in/"
-                },
-                {
-                    "label": "RF & Applied Electromagnetics Lab",
-                    "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
-                },
-                {
-                    "label": "Shannon Lab",
-                    "href": "sho.html"
-                }
-            ]
-        },
-        {
-            "num": "06",
-            "title": "Project Support",
-            "items": [
-                {
-                    "label": "All ECE labs and student projects",
-                    "href": "#projects"
-                }
-            ]
-        }
-    ],
-    "credits": {
-        "chatbot": {
-            "title": "ELEO AI Chatbot",
-            "developer": "Rahul Pardasani",
-            "roll": "MT25035",
-            "program": "M.Tech CSE",
-            "batch": "2025",
-            "institute": "IIIT Delhi"
-        },
-        "website": {
-            "title": "ECE Labs Website (v2)",
-            "team": [
-                {
-                    "name": "Rahul Pardasani",
-                    "roll": "MT25035"
-                },
-                {
-                    "name": "Rohit Kumar",
-                    "roll": "MT25037"
-                },
-                {
-                    "name": "Reehan Sarmah",
-                    "roll": "MT25036"
-                }
-            ],
-            "program": "M.Tech CSE",
-            "batch": "2025",
-            "institute": "IIIT Delhi"
-        }
+    {
+      "type": "maintainence",
+      "isNew": false,
+      "date": "July 21, 2026",
+      "title": "Choo lo",
+      "description": "à¤›à¥‚ à¤²à¥‹ à¤œà¥‹ à¤®à¥à¤à¥‡ à¤¤à¥à¤® à¤•à¤­à¥€,\nà¤–à¥‹ à¤¨à¤¾ à¤œà¤¾à¤Šà¤ à¤®à¥ˆà¤‚ à¤°à¤¾à¤¤-à¤¦à¤¿à¤¨\n",
+      "linkText": "",
+      "link": ""
+    },
+    {
+      "type": "maintainence",
+      "isNew": false,
+      "date": "July 21, 2026",
+      "title": "test",
+      "description": "test",
+      "linkText": "",
+      "link": ""
+    },
+    {
+      "type": "maintainence",
+      "isNew": false,
+      "date": "July 21, 2026",
+      "title": "test test",
+      "description": "test teste",
+      "linkText": "",
+      "link": ""
+    },
+    {
+      "type": "event",
+      "isNew": true,
+      "date": "July 15, 2026",
+      "title": "Waddupppp!",
+      "description": "Bleh.",
+      "linkText": "Read more",
+      "link": "#"
+    },
+    {
+      "type": "update",
+      "isNew": false,
+      "date": "July 8, 2026",
+      "title": "Updated Issue/Return Policy â€” Effective Aug 1",
+      "description": "New component return timelines and late-fee structure have been introduced. Please review the updated policy PDF before your next checkout.",
+      "linkText": "View policy",
+      "link": "policyandguidelines/Issue%20return.pdf"
+    },
+    {
+      "type": "deadline",
+      "isNew": false,
+      "date": "June 20, 2026",
+      "title": "Summer Project Submissions Due",
+      "description": "All summer project reports and component returns must be completed by June 30. Contact the lab team for extension requests.",
+      "linkText": "Read more",
+      "link": "#"
+    },
+    {
+      "type": "general",
+      "isNew": false,
+      "date": "June 10, 2026",
+      "title": "New Lab Manual Available â€” RF Lab",
+      "description": "The updated RF & Applied Electromagnetics Lab manual is now available for download. Covers all new experiments added for the Monsoon semester.",
+      "linkText": "Read more",
+      "link": "#"
     }
+  ],
+  "labs": [
+    {
+      "num": "01",
+      "name": "Digital Circuits Lab",
+      "image": "images/labs/dc.jpg",
+      "room": "Room 301",
+      "title": "Digital Circuits Lab",
+      "description": "Dedicated to concepts and implementation of basic circuits design - a teaching lab supporting course projects for up to 40 students per session.",
+      "link": "dc.html"
+    },
+    {
+      "num": "02",
+      "name": "Circuits & Innovation Lab",
+      "image": "images/labs/cil.jpg",
+      "room": "Room 302",
+      "title": "Circuits & Innovation Lab",
+      "description": "Analog & digital circuits, microcontrollers - 50 students per session.",
+      "link": "cil.html"
+    },
+    {
+      "num": "03",
+      "name": "Basic Electronics Lab",
+      "image": "images/labs/be.jpg",
+      "room": "Room 303",
+      "title": "Basic Electronics Lab",
+      "description": "Digital circuits, basic electronics, circuit theory & devices - 50 students per session.",
+      "link": "https://belab.iiitd.ac.in/"
+    },
+    {
+      "num": "04",
+      "name": "RF & Applied Electromagnetics Lab",
+      "image": "images/labs/rf.jpg",
+      "room": "Room 304",
+      "title": "RF & Applied Electromagnetics Lab",
+      "description": "High-frequency instruments, licensed software, PCB fabrication - research and course projects.",
+      "link": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
+    },
+    {
+      "num": "05",
+      "name": "Shannon Lab",
+      "image": "images/labs/shannon.jpg",
+      "room": "Room 305",
+      "title": "Shannon Lab",
+      "description": "Wireless communication, signal processing, robotics, automation - teaching and research.",
+      "link": "sho.html"
+    },
+    {
+      "num": "06",
+      "name": "Advanced ECE Lab",
+      "image": "images/labs/ael.jpeg",
+      "room": "A-616 Â· R&D Building",
+      "title": "Advanced ECE Lab",
+      "description": "5G testbed, RIS/ORIS setups, D2D communication, real-time signal processing.",
+      "link": "ael.html"
+    },
+    {
+      "num": "07",
+      "name": "Applied Electronics Engineering Lab",
+      "image": "images/labs/cil.jpg",
+      "room": "Room 306 Â· Lecture Hall Complex",
+      "title": "Applied Electronics Engineering Lab",
+      "description": "Hands-on applied electronics, embedded systems, and engineering design projects.",
+      "link": "https://aeelab.iiitd.ac.in/"
+    },
+    {
+      "num": "08",
+      "name": "M. Tech. Lab",
+      "image": "images/labs/ael.jpeg",
+      "room": "A617 Â· R&D Building",
+      "title": "M. Tech. Lab",
+      "description": "Dedicated workspace for postgraduate research and thesis projects in ECE.",
+      "link": "https://mtechlab.iiitd.ac.in/"
+    },
+    {
+      "num": "09",
+      "name": "RF Characterization Facility",
+      "image": "images/labs/rf.jpg",
+      "room": "Ground Floor Â· Academic Building",
+      "title": "RF Characterization Facility",
+      "description": "Specialized RF testing, antenna characterization, and high-frequency measurements.",
+      "link": "https://sites.google.com/iiitd.ac.in/rfcharacterizationfacility?pli=1"
+    }
+  ],
+  "gallery": [
+    {
+      "category": "creative",
+      "image": "images/portfolio/01.jpg",
+      "alt": "TinkerHack",
+      "label": "TinkerHack",
+      "description": "TinkerHack is our flagship hackathon event where students collaborate on innovative electronics and embedded systems projects in a 24-hour challenge.",
+      "type": "image"
+    },
+    {
+      "category": "creative",
+      "image": "images/portfolio/03.jpg",
+      "alt": "Electrivire",
+      "label": "Electrivire",
+      "description": "Electrivire is an annual technical showcase where ECE students present their semester projects spanning circuits, signal processing, and wireless communication.",
+      "type": "image"
+    },
+    {
+      "category": "corporate",
+      "image": "images/portfolio/04.jpg",
+      "alt": "RF Workshop",
+      "label": "RF Workshop",
+      "description": "Our RF & Wireless workshop brings industry experts to train students on radio frequency engineering, antenna design, and spectrum analysis using live equipment.",
+      "type": "image"
+    },
+    {
+      "category": "creative",
+      "image": "images/portfolio/05.jpg",
+      "alt": "HACKiT",
+      "label": "HACKiT",
+      "description": "HACKiT is a collaborative coding & hardware hack event organized by ECE Labs for students passionate about building real-world solutions from scratch.",
+      "type": "image"
+    },
+    {
+      "category": "corporate",
+      "image": "images/portfolio/06.jpg",
+      "alt": "V2V Workshop",
+      "label": "V2V Workshop",
+      "description": "The V2V (Vehicle-to-Vehicle) Communication Workshop explored cutting-edge DSRC and C-V2X protocols with live demonstrations and hands-on experiments.",
+      "type": "image"
+    },
+    {
+      "category": "corporate",
+      "image": "images/portfolio/07.jpg",
+      "alt": "NS3 Workshop",
+      "label": "NS3 Workshop",
+      "description": "The NS3 Network Simulator Workshop trained participants to simulate complex network topologies and analyze protocol behavior using the NS-3 open-source platform.",
+      "type": "image"
+    },
+    {
+      "category": "tvideos",
+      "image": "images/portfolio/02.mp4",
+      "alt": "Lab Video",
+      "label": "Lab Video",
+      "description": "A glimpse inside the ECE Labs â€” our state-of-the-art facilities, dedicated research engineers, and vibrant student community working together every day.",
+      "type": "video",
+      "poster": "images/portfolio/03.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "date": "March 2021",
+      "title": "Touchless Tap",
+      "description": "ECE Lab developed a cost-effective sensor-based water tap that works when it detects your hand under the nozzle. Designed by Research Engineers Sana & Khagendra.",
+      "image": "images/blog/7.jpg"
+    },
+    {
+      "date": "September 2022",
+      "title": "ELEO Chatbot (v1)",
+      "description": "The first version of ELEO (ECE Lab Enquiry Officer) was a simple rule-based, keyword-matching and word-search chatbot â€” not AI-powered. It could only return pre-written single responses to recognized keywords. It was built by B.Tech student Jayan Pahuja under the guidance of Sana Ali Naqvi & Khagendra Joshi. This version has since been completely replaced by the AI-powered v2.",
+      "image": "images/blog/1.jpg"
+    },
+    {
+      "date": "July 2026",
+      "title": "ELEO AI Assistant (v2)",
+      "description": "The current ELEO chatbot is a fully AI-powered assistant, built from scratch by Rahul Pardasani (M.Tech CSE 2025, Roll No. MT25035). It uses large language models (LLMs), a RAG (Retrieval-Augmented Generation) pipeline with a FAISS vector knowledge base, and a LangGraph-based multi-step reasoning agent. This is a complete rebuild with no relation to the old keyword-search v1. Rahul Pardasani developed the ELEO AI chatbot.",
+      "image": "images/blog/1.jpg"
+    },
+    {
+      "date": "July 2026",
+      "title": "ECE Labs Website (v2)",
+      "description": "The official ECE Labs website was upgraded and built as a team project by Rahul Pardasani, Rohit Kumar, and Reehan Sarmah, all from the M.Tech CSE batch of 2025.",
+      "image": "images/blog/1.jpg"
+    },
+    {
+      "date": "November 2019",
+      "title": "Light Automation",
+      "description": "A summer project aimed at making ECE-Labs fully automated, beginning with lights using Arduino, PIR sensors, relays, and lab resources. Designed by Paritosh & Amisha under the guidance of Engineer Abhishek Kumar.",
+      "image": "images/blog/03.jpg"
+    },
+    {
+      "date": "January 2020",
+      "title": "Smart Energy Monitor",
+      "description": "A real-time power consumption monitoring system for ECE lab equipment using IoT sensors and a live dashboard. Built by B.Tech students under Engineer Abhishek Kumar.",
+      "image": "images/blog/03.jpg"
+    },
+    {
+      "date": "August 2021",
+      "title": "RF Signal Analyser",
+      "description": "A low-cost spectrum analyser prototype to measure RF signals in the 100 MHzâ€“2 GHz range, designed and tested inside the RF Lab by M.Tech research students.",
+      "image": "images/blog/7.jpg"
+    },
+    {
+      "date": "March 2023",
+      "title": "Gesture-Controlled Robot",
+      "description": "A wireless robot controlled via hand gestures captured through a flex-sensor glove. Demonstrated at IIIT Delhi's annual tech fest as an ECE Lab showcase project.",
+      "image": "images/blog/1.jpg"
+    },
+    {
+      "date": "October 2023",
+      "title": "Embedded OS Scheduler",
+      "description": "A minimal preemptive task scheduler implemented on ARM Cortex-M4 for embedded systems coursework, integrating priority queues and round-robin scheduling.",
+      "image": "images/blog/03.jpg"
+    },
+    {
+      "date": "February 2024",
+      "title": "Autonomous Line Follower",
+      "description": "A PID-controlled line-following robot built using IR sensors and an Arduino Mega, achieving sub-10ms response times on a competitive track layout.",
+      "image": "images/blog/7.jpg"
+    },
+    {
+      "date": "May 2025",
+      "title": "Lab Equipment Tracker",
+      "description": "A full-stack web app to track issue, return, and availability status of lab equipment in real time, reducing manual inventory overhead by over 60%.",
+      "image": "images/blog/1.jpg"
+    }
+  ],
+  "policies": [
+    {
+      "name": "Issue / Return",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/Issue%20return.pdf"
+    },
+    {
+      "name": "Locker",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/locker.pdf"
+    },
+    {
+      "name": "Safety & Security",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf"
+    },
+    {
+      "name": "Lab Guidelines",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/lab%20guidelines.pdf"
+    },
+    {
+      "name": "Student Guidelines",
+      "tag": "PDF Document",
+      "link": "policyandguidelines/student%20guidelines.pdf"
+    }
+  ],
+  "faq": [
+    {
+      "topic": "Lab Related",
+      "questions": [
+        "How many ECE-Labs are there",
+        "Where are ECE-Labs located",
+        "Seating capacity of the Labs",
+        "Who manages ECE Labs",
+        "Events organized by the labs"
+      ],
+      "pdfLink": "faq/lab.pdf",
+      "pdfLabel": "Open Answers PDF"
+    },
+    {
+      "topic": "Course Related",
+      "questions": [
+        "Courses conducted in ECE Labs",
+        "Where can I find lab handouts",
+        "Where can I get resources for my project",
+        "How can I get help in course related doubts",
+        "Can I access lab for my course work"
+      ],
+      "pdfLink": "faq/Course.pdf",
+      "pdfLabel": "Open Answers PDF"
+    },
+    {
+      "topic": "Facilities Related",
+      "questions": [
+        "What are the issue/return policies",
+        "Where can I find sensors/actuators",
+        "What are the guidelines for students",
+        "What are the safety precautions available",
+        "Where can I find the inventory list of resources"
+      ],
+      "pdfLink": "faq/Facilities.pdf",
+      "pdfLabel": "Open Answers PDF"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahul Gupta",
+      "role": "Technical Officer (Research)",
+      "bio": "10+ years of experience with papers in top journals and conferences in the RF domain.",
+      "photo": "images/team/02.jpg"
+    },
+    {
+      "name": "Sana Ali Naqvi",
+      "role": "Deputy Technical Officer (Research)",
+      "bio": "10+ years in power systems, power electronics, and wearable domains.",
+      "photo": "images/team/08.jpg"
+    },
+    {
+      "name": "Khagendra Joshi",
+      "role": "Deputy Technical Officer (Research)",
+      "bio": "10+ years in wireless communication domain, published in top conferences.",
+      "photo": "images/team/9.jpg"
+    },
+    {
+      "name": "Abhishek Kumar",
+      "role": "Junior Technical Officer (SG)",
+      "bio": "10+ years in digital processing and test & measurement industries.",
+      "photo": "images/team/01.jpg"
+    }
+  ],
+  "facilities": [
+    {
+      "num": "01",
+      "title": "Hardware Facilities",
+      "items": [
+        {
+          "label": "Digital Circuits Lab",
+          "href": "dc.html"
+        },
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "https://belab.iiitd.ac.in/"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "02",
+      "title": "Software Facilities",
+      "items": [
+        {
+          "label": "Digital Circuits Lab",
+          "href": "dc.html"
+        },
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "https://belab.iiitd.ac.in/"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "title": "Issue / Return Facility",
+      "items": [
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "https://belab.iiitd.ac.in/"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "title": "Cabinet Facility",
+      "items": [
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "title": "Lab Manuals / Handouts",
+      "items": [
+        {
+          "label": "Circuits & Innovation Lab",
+          "href": "cil.html"
+        },
+        {
+          "label": "Basic Electronics Lab",
+          "href": "https://belab.iiitd.ac.in/"
+        },
+        {
+          "label": "RF & Applied Electromagnetics Lab",
+          "href": "https://sites.google.com/iiitd.ac.in/rf-applied-electomagneticslab/home?pli=1"
+        },
+        {
+          "label": "Shannon Lab",
+          "href": "sho.html"
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "title": "Project Support",
+      "items": [
+        {
+          "label": "All ECE labs and student projects",
+          "href": "#projects"
+        }
+      ]
+    }
+  ],
+  "credits": {
+    "chatbot": {
+      "title": "ELEO AI Chatbot",
+      "developer": "Rahul Pardasani",
+      "roll": "MT25035",
+      "program": "M.Tech CSE",
+      "batch": "2025",
+      "institute": "IIIT Delhi"
+    },
+    "website": {
+      "title": "ECE Labs Website (v2)",
+      "team": [
+        {
+          "name": "Rahul Pardasani",
+          "roll": "MT25035"
+        },
+        {
+          "name": "Rohit Kumar",
+          "roll": "MT25037"
+        },
+        {
+          "name": "Reehan Sarmah",
+          "roll": "MT25036"
+        }
+      ],
+      "program": "M.Tech CSE",
+      "batch": "2025",
+      "institute": "IIIT Delhi"
+    }
+  }
 }
