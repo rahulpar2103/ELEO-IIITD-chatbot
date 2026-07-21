@@ -190,9 +190,11 @@ def extract_index_content(data: dict, source: str) -> list[dict]:
     chatbot_c = credits.get("chatbot", {})
     if chatbot_c:
         text = (
-            f"The ELEO AI chatbot was developed by {chatbot_c.get('developer', '')} "
+            f"The ELEO AI chatbot (v2) was developed by {chatbot_c.get('developer', '')} "
             f"(Roll No. {chatbot_c.get('roll', '')}, {chatbot_c.get('program', '')} "
-            f"batch {chatbot_c.get('batch', '')} at {chatbot_c.get('institute', '')})."
+            f"batch {chatbot_c.get('batch', '')} at {chatbot_c.get('institute', '')}). "
+            f"ELEO is the AI assistant for ECE Labs. "
+            f"The initial keyword-matching v1 prototype of ELEO was created by Jayan Pahuja."
         )
         items.append({"text": text, "source": source, "section": "credits"})
     website_c = credits.get("website", {})
@@ -201,11 +203,21 @@ def extract_index_content(data: dict, source: str) -> list[dict]:
             f"{m['name']} ({m['roll']})" for m in website_c.get("team", [])
         )
         text = (
-            f"The ECE Labs website was built by {members}, "
+            f"The ECE Labs website (v2) was built by {members}, "
             f"all from {website_c.get('program', '')} batch {website_c.get('batch', '')} "
             f"at {website_c.get('institute', '')}."
         )
         items.append({"text": text, "source": source, "section": "credits"})
+
+    people_overview = (
+        "People involved in ECE Labs: "
+        "The labs are managed by Research Engineers Ms. Sana Ali Naqvi, Mr. Khagendra Joshi, "
+        "Mr. Abhishek Kumar, and Mr. Rahul Gupta. "
+        "The ELEO AI chatbot (v2) was developed by Rahul Pardasani (M.Tech CSE 2025), "
+        "upgrading the initial keyword-search v1 created by Jayan Pahuja. "
+        "The ECE Labs website was built by Rahul Pardasani, Rohit Kumar, and Reehan Sarmah (M.Tech CSE 2025)."
+    )
+    items.append({"text": people_overview, "source": source, "section": "team_overview"})
 
     return items
 

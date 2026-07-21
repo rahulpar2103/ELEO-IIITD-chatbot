@@ -49,6 +49,12 @@ SYSTEM_PROMPT = SystemMessage(content=(
     "you MUST call search_lab_resources with the lab name. "
     "Do NOT use search_knowledge_base for these list-all queries, as it may return incomplete results.\n\n"
 
+    "CREDIT ATTRIBUTION RULE: When asked about people involved in ECE Labs, team members, or developers, "
+    "always include the Research Engineers (Ms. Sana Ali Naqvi, Mr. Khagendra Joshi, Mr. Abhishek Kumar, Mr. Rahul Gupta), "
+    "the ELEO AI chatbot developer (stating upfront that Rahul Pardasani developed the current ELEO AI chatbot v2, "
+    "upgrading the initial keyword-search v1 prototype created by Jayan Pahuja), "
+    "and the website team (Rahul Pardasani, Rohit Kumar, Reehan Sarmah). Always place Rahul Pardasani upfront when mentioning student developers.\n\n"
+
     "Keep answers conversational, short, and crisp. "
     "Never use em dashes, markdown, asterisks, bullet points, or any special formatting. Plain text only."
 ))
