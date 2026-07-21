@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Portal Editor</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>ECE Labs Portal - JSON Data Editor</h1>
+    <div class="file-selector-container">
+      <label for="fileSelect">Select File to Edit:</label>
+      <select id="fileSelect">
+        <option value="">-- Choose a JSON file --</option>
+      </select>
+      <button id="saveBtn" class="btn btn-primary hidden">Save File</button>
+    </div>
+  </header>
+
+  <main id="editorContainer" class="hidden">
+    <div class="sidebar">
+      <h2>Sections</h2>
+      <ul id="sectionList"></ul>
+    </div>
+
+    <div class="content">
+      <div id="statusAlert" class="alert hidden"></div>
+
+      <!-- Settings Section (renders as key-value forms directly) -->
+      <div id="settingsContainer" class="section-view hidden">
+        <h2>Global Settings</h2>
+        <form id="settingsForm" class="grid-form"></form>
+      </div>
+
+      <!-- List Section (renders table of entries with CRUD actions) -->
+      <div id="listContainer" class="section-view hidden">
+        <div class="section-header">
+          <h2 id="listTitle">Items</h2>
+          <button id="addItemBtn" class="btn btn-success">Add New Item</button>
+        </div>
+        <div class="table-responsive">
+          <table id="listTable">
+            <thead>
+              <tr id="tableHeaderRow"></tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Edit/Add Item Dialog Modal -->
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Edit Item</h3>
+        <span class="close-modal">&times;</span>
+      </div>
+      <form id="itemForm">
+        <div id="modalFormFields"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close-modal-btn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Apply Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

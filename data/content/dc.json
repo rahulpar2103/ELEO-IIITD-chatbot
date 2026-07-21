@@ -1,0 +1,191 @@
+{
+  "settings": {
+    "galleryMax": 4,
+    "resourceMax": 6
+  },
+  "resources": [
+    {
+      "id": "dso-keysight",
+      "title": "Digital Storage Oscilloscope",
+      "category": "Measurement",
+      "subtitle": "Real-time waveform capture and analysis",
+      "description": "Keysight DSO series digital storage oscilloscopes used for capturing, displaying, and analysing electronic waveforms in digital circuit experiments.",
+      "gradient": "linear-gradient(135deg, #1a3a5c, #0f2340, #07111f)",
+      "initials": "DSO",
+      "overview": "The Keysight Digital Storage Oscilloscopes in the Digital Circuits Lab provide students with real-time 2-channel waveform capture and analysis capabilities. These instruments are central to almost every lab experiment, enabling students to visualise clock signals, logic transitions, and timing diagrams directly from their circuit breadboards and PCBs.",
+      "specs": [
+        { "key": "Channels", "val": "2" },
+        { "key": "Bandwidth", "val": "100 MHz" },
+        { "key": "Sample Rate", "val": "2 GSa/s" },
+        { "key": "Display", "val": "7 inch WVGA colour" },
+        { "key": "Trigger Modes", "val": "Edge, Pulse, Video, Pattern" }
+      ],
+      "applications": [
+        "Digital circuit waveform analysis",
+        "Clock signal verification",
+        "Timing diagram capture",
+        "Logic level measurements",
+        "Signal integrity testing"
+      ]
+    },
+    {
+      "id": "dc-power-supply",
+      "title": "DC Regulated Power Supply",
+      "category": "Power",
+      "subtitle": "Stable voltage and current source for circuit experiments",
+      "description": "Dual-channel regulated DC power supplies providing stable, adjustable voltage and current for powering digital circuit breadboard experiments.",
+      "gradient": "linear-gradient(135deg, #3b3000, #5a4800, #7a6000)",
+      "initials": "PSU",
+      "overview": "The DC Regulated Power Supplies in the Digital Circuits Lab support dual-channel output, allowing students to power TTL and CMOS circuits simultaneously with independently adjustable voltage rails. They are used in every experiment involving discrete logic gates, flip-flops, multiplexers, and adder circuits.",
+      "specs": [
+        { "key": "Output Channels", "val": "2 independent" },
+        { "key": "Voltage Range", "val": "0 - 30 V" },
+        { "key": "Current Range", "val": "0 - 5 A" },
+        { "key": "Regulation", "val": "< 0.5% load regulation" },
+        { "key": "Display", "val": "Digital LED readout" }
+      ],
+      "applications": [
+        "Powering TTL and CMOS logic circuits",
+        "Dual-rail supply for op-amp experiments",
+        "Constant current source for sensor experiments",
+        "Bias supply for transistor characterisation"
+      ]
+    },
+    {
+      "id": "multimeter-handheld",
+      "title": "Keysight Handheld Multimeter",
+      "category": "Measurement",
+      "subtitle": "Portable DMM for voltage, current, and resistance",
+      "description": "Keysight handheld digital multimeters used for quick in-circuit voltage, current, resistance, and continuity measurements.",
+      "gradient": "linear-gradient(135deg, #1a4a1a, #0d2e0d, #071507)",
+      "initials": "DMM",
+      "overview": "Each bench station in the Digital Circuits Lab has a Keysight handheld multimeter available. These are used alongside oscilloscopes to take static measurements of node voltages, supply rails, resistor values, and diode characteristics. Their auto-ranging capability makes them accessible for first-year students.",
+      "specs": [
+        { "key": "DC Voltage", "val": "0.1 mV to 1000 V" },
+        { "key": "AC Voltage", "val": "1 mV to 750 V rms" },
+        { "key": "Resistance", "val": "0.1 Ohm to 100 MOhm" },
+        { "key": "Continuity", "val": "Audible beeper" },
+        { "key": "Display", "val": "4000 count digital" }
+      ],
+      "applications": [
+        "Node voltage measurements",
+        "Component value verification",
+        "Continuity and short-circuit testing",
+        "Supply rail monitoring"
+      ]
+    },
+    {
+      "id": "breadboard-station",
+      "title": "Experiment Breadboard Stations",
+      "category": "Prototyping",
+      "subtitle": "Solderless prototyping for digital circuit assembly",
+      "description": "Full-sized solderless breadboards at each student station for rapid assembly and testing of digital logic circuits.",
+      "gradient": "linear-gradient(135deg, #3a1a4a, #220d2d, #100514)",
+      "initials": "BB",
+      "overview": "Each student workstation in the Digital Circuits Lab is equipped with a full-size solderless breadboard. These are the primary prototyping platform for all Digital Circuits and Basic Electronics course experiments. Students use them to build combinational and sequential logic circuits, connect ICs, resistors, capacitors, and LEDs, and observe circuit behaviour in real time.",
+      "specs": [
+        { "key": "Tie Points", "val": "830 points" },
+        { "key": "Bus Rails", "val": "4 power rails" },
+        { "key": "Compatible ICs", "val": "DIP packages, 14/16/20 pin" },
+        { "key": "Wire Gauge", "val": "22-28 AWG" }
+      ],
+      "applications": [
+        "Logic gate and combinational circuit assembly",
+        "Sequential circuit experiments (flip-flops, counters)",
+        "Resistor-capacitor timing networks",
+        "IC pin testing and verification"
+      ]
+    },
+    {
+      "id": "resistors-capacitors",
+      "title": "Passive Component Kit",
+      "category": "Consumables",
+      "subtitle": "Resistors, capacitors, and discrete components",
+      "description": "A wide range of resistors, capacitors, and other passive discrete components available for student experiments in the lab.",
+      "gradient": "linear-gradient(135deg, #4a2a1a, #2d1a0d, #150c06)",
+      "initials": "PCK",
+      "overview": "The Digital Circuits Lab maintains a well-stocked inventory of passive components for student use during experiments. This includes standard resistor values from 10 Ohm to 1 MOhm, ceramic and electrolytic capacitors, and LEDs. These are issued at the component counter and must be returned after experiments.",
+      "specs": [
+        { "key": "Resistors", "val": "10 Ohm to 1 MOhm (E12 series)" },
+        { "key": "Capacitors", "val": "10 pF to 470 uF" },
+        { "key": "LEDs", "val": "Red, Green, Yellow" },
+        { "key": "Other", "val": "Diodes, transistors (NPN/PNP)" }
+      ],
+      "applications": [
+        "Pull-up and pull-down resistor networks",
+        "Debounce circuits for switches",
+        "RC timing networks",
+        "Indicator LEDs for logic state display"
+      ]
+    },
+    {
+      "id": "logic-ics",
+      "title": "TTL / CMOS Logic IC Library",
+      "category": "ICs",
+      "subtitle": "7400 series and CMOS logic gates and flip-flops",
+      "description": "A curated library of 7400-series TTL and 4000-series CMOS logic ICs covering gates, flip-flops, counters, multiplexers, and decoders.",
+      "gradient": "linear-gradient(135deg, #001a3a, #00102a, #00060f)",
+      "initials": "IC",
+      "overview": "The Digital Circuits Lab maintains a comprehensive IC library covering all components required for Digital Circuits and Basic Electronics course experiments. Students can issue ICs from the counter including AND, OR, NAND, NOR, XOR gates (74LS series), D and JK flip-flops, 4-bit binary counters, 7-segment decoder drivers, and 4-to-1 multiplexers.",
+      "specs": [
+        { "key": "Logic Family", "val": "74LS TTL and CD4000 CMOS" },
+        { "key": "Gates", "val": "AND, OR, NAND, NOR, XOR, NOT" },
+        { "key": "Flip-Flops", "val": "D, JK, SR" },
+        { "key": "Counters", "val": "4-bit binary (7493), BCD (7490)" },
+        { "key": "Decoders", "val": "7-segment decoder (7447), 2-to-4, 3-to-8" }
+      ],
+      "applications": [
+        "Combinational logic design experiments",
+        "Synchronous and asynchronous counters",
+        "Multiplexer-based circuit design",
+        "BCD to 7-segment display interfacing",
+        "Flip-flop timing and state machine experiments"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Basic Electronics",
+      "buttons": [
+        { "label": "Experiment List", "link": "faq/lab.pdf", "primary": true },
+        { "label": "Lab Handouts", "link": "faq/Course.pdf", "primary": false },
+        { "label": "Course Objectives", "link": "faq/Facilities.pdf", "primary": false }
+      ]
+    },
+    {
+      "title": "Digital Circuits",
+      "buttons": [
+        { "label": "Experiment List", "link": "faq/lab.pdf", "primary": true },
+        { "label": "Lab Handouts", "link": "faq/Course.pdf", "primary": false },
+        { "label": "Course Objectives", "link": "faq/Facilities.pdf", "primary": false }
+      ]
+    }
+  ],
+  "guidelines": [
+    { "name": "LAB Guidelines", "link": "policyandguidelines/lab%20guidelines.pdf" },
+    { "name": "TF Guidelines", "link": "policyandguidelines/Facilities.pdf" },
+    { "name": "Student Guidelines", "link": "policyandguidelines/student%20guidelines.pdf" },
+    { "name": "TA Guidelines", "link": "policyandguidelines/Course.pdf" },
+    { "name": "Safety & Security", "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf" }
+  ],
+  "gallery": [
+    { "image": "images/portfolio/01.jpg", "alt": "Technical Events", "label": "Technical Events" },
+    { "image": "images/portfolio/04.jpg", "alt": "Workshops", "label": "Workshops" },
+    { "image": "images/blog/03.jpg", "alt": "Seminar", "label": "Seminar" },
+    { "image": "images/blog/7.jpg", "alt": "Videos", "label": "Videos" }
+  ],
+  "highlights": [
+    {
+      "title": "Best Students",
+      "names": ["-", "-", "-", "-", "-"]
+    },
+    {
+      "title": "Best Teaching Assistants",
+      "names": ["-", "-", "-", "-", "-"]
+    },
+    {
+      "title": "Best Interns",
+      "names": ["-", "-", "-", "-", "-"]
+    }
+  ]
+}

@@ -1,10 +1,21 @@
 import json
+import os
 from typing import Any, Iterable
 
 from langchain_core.documents import Document
 
-
 def load_json(path: str) -> dict:
+    filename = os.path.basename(path)
+    if filename.endswith(".json"):
+        try:
+            from content import get_content_store
+            store = get_content_store()
+            content, _ = store.read(filename)
+            return content
+        except Exception:
+            # Fallback to local open if store is not configured or fails
+            pass
+            
     with open(path, "r", encoding="utf-8-sig") as f:
         return json.load(f)
 

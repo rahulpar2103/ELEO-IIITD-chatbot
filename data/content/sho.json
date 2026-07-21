@@ -1,0 +1,1551 @@
+﻿{
+  "settings": {
+    "galleryMax": 7,
+    "projectsMax": 1,
+    "resourceMax": 1000,
+    "resourceGroupThreshold": 2
+  },
+  "resources": {
+    "threshold": 2,
+    "total": 85,
+    "groupCount": 10,
+    "miscCount": 20,
+    "groups": [
+      {
+        "id": "software-defined-radios",
+        "name": "SOFTWARE DEFINED RADIOS",
+        "count": 9,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "software-defined-radios-ni-usrp-2920-50-mhz-to-2-2-ghz-0",
+            "title": "NI USRP 2920 (50 MHz to 2.2 GHz)",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 2,
+            "link": "https://www.ni.com/en-in/shop/hardware/products/usrp-software-defined-radio-device.html?modelId=125048",
+            "remark": "2 newly added(Aug '20)",
+            "status": null,
+            "note": "2 newly added(Aug '20)",
+            "initials": "NUMG",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 0,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-ni-usrp-2921-2-4-ghz-4-9-5-9-ghz-1",
+            "title": "NI USRP 2921 (2.4 GHz & 4.9-5.9 GHz)",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 4,
+            "link": "http://sine.ni.com/nips/cds/view/p/lang/en/nid/209949",
+            "remark": null,
+            "status": "2 Faulty",
+            "note": "2 Faulty",
+            "initials": "NUGG",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 1,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-ni-usrp-2922-400-mhz-4-4-ghz-2",
+            "title": "NI USRP 2922 (400 MHz - 4.4 GHz)",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 9,
+            "link": "http://sine.ni.com/nips/cds/view/p/lang/en/nid/212997",
+            "remark": "2 with LFRX and LFTx",
+            "status": "3 Faulty",
+            "note": "2 with LFRX and LFTx",
+            "initials": "NUMG",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 2,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-warp-v3-kits-3",
+            "title": "WARP V3 kits",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 2,
+            "link": "https://www.mangocomm.com/products/kits/warp-v3-kit",
+            "remark": null,
+            "status": null,
+            "note": "SOFTWARE DEFINED RADIOS",
+            "initials": "WVK",
+            "gradient": "linear-gradient(135deg, #5b3b7a, #362247, #211430)",
+            "sortIndex": 3,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-rtl-sdr-25mhz-1750mhz-with-antenna-4",
+            "title": "RTL SDR ( 25MHz-1750MHz) with Antenna",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 1,
+            "link": "https://www.nooelec.com/store/sdr/sdr-receivers/nesdr-mini.html",
+            "remark": null,
+            "status": null,
+            "note": "SOFTWARE DEFINED RADIOS",
+            "initials": "RSMM",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 4,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-usrp-e310-70-mhz-6-ghz-kit-5",
+            "title": "USRP E310( 70 MHz – 6 GHz) kit",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 2,
+            "link": "https://www.ettus.com/all-products/e310/",
+            "remark": null,
+            "status": null,
+            "note": "SOFTWARE DEFINED RADIOS",
+            "initials": "UEMG",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 5,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-adalm-pluto-sdrs-6",
+            "title": "Adalm pluto SDRs",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 17,
+            "link": "https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html",
+            "remark": "15 newly added(16/6/2026)",
+            "status": null,
+            "note": "15 newly added(16/6/2026)",
+            "initials": "APS",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 6,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-avnet-zynq-boards-aes-zsdr3-adi-g-7",
+            "title": "AVNET Zynq Boards(AES-ZSDR3-ADI-G)",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 4,
+            "link": "https://products.avnet.com/opasdata/d120001/medias/docus/7/Avnet-AES-ZSDR3-ADI-G-Product-Brief.pdf",
+            "remark": null,
+            "status": "3 faulty",
+            "note": "3 faulty",
+            "initials": "AZBA",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 7,
+            "isMisc": false
+          },
+          {
+            "id": "software-defined-radios-usrp-b200-8",
+            "title": "USRP B200",
+            "group": "SOFTWARE DEFINED RADIOS",
+            "originalType": "SOFTWARE DEFINED RADIOS",
+            "quantity": 2,
+            "link": "https://www.ettus.com/all-products/ub200-kit/",
+            "remark": "2 newly added(16/6/2026)",
+            "status": null,
+            "note": "2 newly added(16/6/2026)",
+            "initials": "UB",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 8,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "sdr-accessories",
+        "name": "SDR Accessories",
+        "count": 6,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "sdr-accessories-dual-band-antenna-2-4-2-48-ghz-and-4-9-5-9-ghz-0",
+            "title": "Dual Band Antenna (2.4-2.48 GHz and 4.9-5.9 GHz)",
+            "group": "SDR Accessories",
+            "originalType": "SDR Accessories",
+            "quantity": 11,
+            "link": "http://www.ettus.com/product/details/VERT2450",
+            "remark": null,
+            "status": null,
+            "note": "SDR Accessories",
+            "initials": "DBAG",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 9,
+            "isMisc": false
+          },
+          {
+            "id": "sdr-accessories-dual-band-antenna-824-960mhz-and-1710-1990mhz-1",
+            "title": "Dual Band Antenna (824-960MHz and 1710-1990MHz)",
+            "group": "SDR Accessories",
+            "originalType": "SDR Accessories",
+            "quantity": 9,
+            "link": "https://www.ettus.com/product/details/VERT900",
+            "remark": "4 newly added(Aug '20)",
+            "status": null,
+            "note": "4 newly added(Aug '20)",
+            "initials": "DBAM",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 10,
+            "isMisc": false
+          },
+          {
+            "id": "sdr-accessories-tri-band-antenna-144-mhz-400-mhz-and-1200-mhz-2",
+            "title": "Tri Band Antenna (144 MHz, 400 MHz and 1200 MHz)",
+            "group": "SDR Accessories",
+            "originalType": "SDR Accessories",
+            "quantity": 13,
+            "link": "http://www.ettus.com/product/details/VERT400",
+            "remark": "4 newly added(Aug '20)",
+            "status": null,
+            "note": "4 newly added(Aug '20)",
+            "initials": "TBAM",
+            "gradient": "linear-gradient(135deg, #5b3b7a, #362247, #211430)",
+            "sortIndex": 11,
+            "isMisc": false
+          },
+          {
+            "id": "sdr-accessories-usrp-mimo-cable-0-5m-3",
+            "title": "USRP MIMO Cable (0.5m)",
+            "group": "SDR Accessories",
+            "originalType": "SDR Accessories",
+            "quantity": 11,
+            "link": "https://www.ettus.com/product/details/MIMO-CBL",
+            "remark": "2 newly added(Aug '20)",
+            "status": null,
+            "note": "2 newly added(Aug '20)",
+            "initials": "UMCM",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 12,
+            "isMisc": false
+          },
+          {
+            "id": "sdr-accessories-sma-sma-cable-1m-including-usrp-kits-sma-4",
+            "title": "SMA-SMA Cable (1m)(including USRP kits SMA)",
+            "group": "SDR Accessories",
+            "originalType": "SDR Accessories",
+            "quantity": 18,
+            "link": "http://www.fairviewmicrowave.com/sma-male-sma-male-cable-rg58cu-coax-fmc0202058-24-p.aspx",
+            "remark": null,
+            "status": null,
+            "note": "SDR Accessories",
+            "initials": "SSCM",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 13,
+            "isMisc": false
+          },
+          {
+            "id": "sdr-accessories-attenuator-30db-5",
+            "title": "Attenuator (30dB)",
+            "group": "SDR Accessories",
+            "originalType": "SDR Accessories",
+            "quantity": 13,
+            "link": "https://www.mouser.in/ProductDetail/Midwest-Microwave-Cinch-Connectivity-Solutions/ATT-0444-30-SMA-02?qs=sGAEpiMZZMvo7grblV%252bRTLEON4nAA8lkwSwielHRjW6Ao8DQJp08Xg%3d%3d",
+            "remark": null,
+            "status": null,
+            "note": "SDR Accessories",
+            "initials": "AD",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 14,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "fpga-boards",
+        "name": "FPGA Boards",
+        "count": 11,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "fpga-boards-zed-board-kits-0",
+            "title": "Zed Board kits",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 23,
+            "link": "http://zedboard.org/product/zedboard",
+            "remark": null,
+            "status": "2 Faulty",
+            "note": "2 Faulty",
+            "initials": "ZBK",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 15,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-digilent-basys-3-boards-1",
+            "title": "Digilent Basys 3 boards",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 40,
+            "link": "https://reference.digilentinc.com/_media/basys3:basys3_rm.pdf",
+            "remark": null,
+            "status": "1 Faulty",
+            "note": "1 Faulty",
+            "initials": "DBB",
+            "gradient": "linear-gradient(135deg, #5b3b7a, #362247, #211430)",
+            "sortIndex": 16,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-atlys-boards-2",
+            "title": "ATLYS Boards",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 22,
+            "link": "https://store.digilentinc.com/atlys-spartan-6-fpga-trainer-board-limited-time-see-nexys-video/",
+            "remark": null,
+            "status": null,
+            "note": "FPGA Boards",
+            "initials": "AB",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 17,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-aes-ultra96-g-3",
+            "title": "AES-ULTRA96-G",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 1,
+            "link": "https://www.avnet.com/shop/us/products/avnet-engineering-services/aes-ultra96-g-3074457345634920668/?CMP=AMER-249-ULTRA96-HACKSTER-CONTEST-201807?aka_re=1",
+            "remark": null,
+            "status": null,
+            "note": "FPGA Boards",
+            "initials": "AUG",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 18,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-basys-2-boards-4",
+            "title": "Basys 2 boards",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 49,
+            "link": "https://store.digilentinc.com/basys-2-spartan-3e-fpga-trainer-board-limited-time/",
+            "remark": null,
+            "status": null,
+            "note": "FPGA Boards",
+            "initials": "BB",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 19,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-zyboz7-boards-5",
+            "title": "ZYBOZ7 Boards",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 15,
+            "link": "https://reference.digilentinc.com/_media/reference/programmable-logic/zybo-z7/zybo-z7_rm.pdf",
+            "remark": null,
+            "status": null,
+            "note": "FPGA Boards",
+            "initials": "ZB",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 20,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-polarfire-soc-fpga-icicle-kit-6",
+            "title": "PolarFire SoC FPGA Icicle Kit",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 1,
+            "link": "https://www.microchip.com/en-us/development-tool/mpfs-icicle-kit-es",
+            "remark": "43904-PAC0913(Added on 27/9/2023)",
+            "status": null,
+            "note": "43904-PAC0913(Added on 27/9/2023)",
+            "initials": "PSFI",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 21,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-pynqz2-advance-kit-7",
+            "title": "PynqZ2 advance kit",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 3,
+            "link": "https://www.xilinx.com/support/university/xup-boards/XUPPYNQ-Z2.html",
+            "remark": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": "2 Deployed in cloudlabs system",
+            "note": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "PAK",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 22,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-boolean-boards-8",
+            "title": "Boolean boards",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 12,
+            "link": "https://www.realdigital.org/hardware/boolean",
+            "remark": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": null,
+            "note": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "BB",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 23,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-arty7-9",
+            "title": "Arty7",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 1,
+            "link": "https://www.mouser.in/new/digilent/digilent-arty-a7-100t-board/?gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E_06NvwR3At1yGI2LuYDX8YDFDZl_CkJamd84EIaQpNfZ6zWEOVK1BoCXnEQAvD_BwE",
+            "remark": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": null,
+            "note": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "A",
+            "gradient": "linear-gradient(135deg, #5b3b7a, #362247, #211430)",
+            "sortIndex": 24,
+            "isMisc": false
+          },
+          {
+            "id": "fpga-boards-urbana-10",
+            "title": "UrbanA",
+            "group": "FPGA Boards",
+            "originalType": "FPGA Boards",
+            "quantity": 1,
+            "link": "https://www.realdigital.org/hardware/urbana",
+            "remark": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": null,
+            "note": "Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "U",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 25,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "digilent-pmod-devices",
+        "name": "Digilent Pmod Devices",
+        "count": 14,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "digilent-pmod-devices-ssd-0",
+            "title": "SSD",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 9,
+            "link": "http://store.digilentinc.com/pmod-ssd-seven-segment-display/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "S",
+            "gradient": "linear-gradient(135deg, #5b3b7a, #362247, #211430)",
+            "sortIndex": 26,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-kypd-1",
+            "title": "KYPD",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 20,
+            "link": "http://store.digilentinc.com/pmod-kypd-16-button-keypad/",
+            "remark": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": null,
+            "note": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "K",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 27,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-usb-uart-2",
+            "title": "USB-UART",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 5,
+            "link": "https://store.digilentinc.com/pmod-usbuart-usb-to-uart-interface/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "UU",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 28,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-rtcc-3",
+            "title": "RTCC",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 5,
+            "link": "https://store.digilentinc.com/pmod-rtcc-real-time-clock-calendar/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "R",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 29,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-maxsonar-4",
+            "title": "MAXSONAR",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 2,
+            "link": "https://store.digilentinc.com/pmodmaxsonar-maxbotix-ultrasonic-range-finder/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "M",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 30,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-nic100-5",
+            "title": "NIC100",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 5,
+            "link": "https://store.digilentinc.com/pmod-nic100-network-interface-controller/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "N",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 31,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-cmps2-3-axis-compass-6",
+            "title": "CMPS2:3 Axis compass",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 5,
+            "link": "https://store.digilentinc.com/pmod-cmps2-3-axis-compass/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "CAC",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 32,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-ambient-light-sensor-7",
+            "title": "Ambient light sensor",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 5,
+            "link": "https://store.digilentinc.com/pmod-als-ambient-light-sensor/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "ALS",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 33,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-pcam-5c-8",
+            "title": "Pcam 5c",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 2,
+            "link": "https://store.digilentinc.com/pcam-5c-5-mp-fixed-focus-color-camera-module/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "PC",
+            "gradient": "linear-gradient(135deg, #5b3b7a, #362247, #211430)",
+            "sortIndex": 34,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-mic3-9",
+            "title": "MIC3",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 2,
+            "link": "https://store.digilentinc.com/pmod-mic3-mems-microphone-with-adjustable-gain/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "M",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 35,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-jstk2-10",
+            "title": "JSTK2",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 1,
+            "link": "https://store.digilentinc.com/pmod-jstk2-two-axis-joystick/",
+            "remark": null,
+            "status": null,
+            "note": "Digilent Pmod Devices",
+            "initials": "J",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 36,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-tph2-11",
+            "title": "TPH2",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 39,
+            "link": "https://digilent.com/reference/pmod/pmodtph2/start",
+            "remark": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": null,
+            "note": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "T",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 37,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-da2-12",
+            "title": "DA2",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 5,
+            "link": "https://digilent.com/reference/pmod/pmodda2/reference-manual",
+            "remark": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": null,
+            "note": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "D",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 38,
+            "isMisc": false
+          },
+          {
+            "id": "digilent-pmod-devices-oledrgb-13",
+            "title": "OLEDrgb",
+            "group": "Digilent Pmod Devices",
+            "originalType": "Digilent Pmod Devices",
+            "quantity": 5,
+            "link": "https://digilent.com/reference/pmod/pmodoledrgb/start",
+            "remark": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "status": null,
+            "note": "5 Donated by Dr. Sumit Darak on 22/2/2024",
+            "initials": "O",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 39,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "optical-communication-kits-and-resources",
+        "name": "Optical communication (Kits and Resources)",
+        "count": 7,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "optical-communication-kits-and-resources-advanced-fiber-optic-communication-trainer-kit-0",
+            "title": "Advanced Fiber Optic Communication Trainer kit",
+            "group": "Optical communication (Kits and Resources)",
+            "originalType": "Optical communication (Kits and Resources)",
+            "quantity": 1,
+            "link": "http://www.akademika.in/lab/products_desc1.aspx?id=4",
+            "remark": null,
+            "status": null,
+            "note": "Optical communication (Kits and Resources)",
+            "initials": "AFOC",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 40,
+            "isMisc": false
+          },
+          {
+            "id": "optical-communication-kits-and-resources-fiber-optic-trainer-kit-for-glass-and-plastic-fiber-1",
+            "title": "Fiber Optic Trainer Kit for Glass and Plastic fiber",
+            "group": "Optical communication (Kits and Resources)",
+            "originalType": "Optical communication (Kits and Resources)",
+            "quantity": 2,
+            "link": "http://www.akademika.in/lab/products_desc1.aspx?id=177",
+            "remark": null,
+            "status": null,
+            "note": "Optical communication (Kits and Resources)",
+            "initials": "FOTK",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 41,
+            "isMisc": false
+          },
+          {
+            "id": "optical-communication-kits-and-resources-pda36a2-switchable-gain-detector-2",
+            "title": "PDA36A2(Switchable Gain Detector)",
+            "group": "Optical communication (Kits and Resources)",
+            "originalType": "Optical communication (Kits and Resources)",
+            "quantity": 1,
+            "link": "https://www.thorlabs.com/thorproduct.cfm?partnumber=PDA36A2",
+            "remark": null,
+            "status": null,
+            "note": "Optical communication (Kits and Resources)",
+            "initials": "PSGD",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 42,
+            "isMisc": false
+          },
+          {
+            "id": "optical-communication-kits-and-resources-opti-system-version-14-key-usb-3",
+            "title": "Opti system version 14 key(USB)",
+            "group": "Optical communication (Kits and Resources)",
+            "originalType": "Optical communication (Kits and Resources)",
+            "quantity": null,
+            "link": "http://optiwave.com/category/products/system-and-amplifier-design/optisystem/",
+            "remark": null,
+            "status": null,
+            "note": "Optical communication (Kits and Resources)",
+            "initials": "OSVK",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 43,
+            "isMisc": false
+          },
+          {
+            "id": "optical-communication-kits-and-resources-ofdm-li-fi-evaluation-kit-4",
+            "title": "OFDM Li-Fi Evaluation kit",
+            "group": "Optical communication (Kits and Resources)",
+            "originalType": "Optical communication (Kits and Resources)",
+            "quantity": 1,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Optical communication (Kits and Resources)",
+            "initials": "OLFE",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 44,
+            "isMisc": false
+          },
+          {
+            "id": "optical-communication-kits-and-resources-ook-li-fi-evaluation-kit-5",
+            "title": "OOK Li-Fi Evaluation kit",
+            "group": "Optical communication (Kits and Resources)",
+            "originalType": "Optical communication (Kits and Resources)",
+            "quantity": 1,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Optical communication (Kits and Resources)",
+            "initials": "OLFE",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 45,
+            "isMisc": false
+          },
+          {
+            "id": "optical-communication-kits-and-resources-untitled-resource-6",
+            "title": "Untitled resource",
+            "group": "Optical communication (Kits and Resources)",
+            "originalType": "Optical communication (Kits and Resources)",
+            "quantity": null,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Optical communication (Kits and Resources)",
+            "initials": "UR",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 46,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "software-license",
+        "name": "Software(License)",
+        "count": 3,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "software-license-labview-software-academic-suite-0",
+            "title": "LabVIEW Software (Academic Suite)",
+            "group": "Software(License)",
+            "originalType": "Software(License)",
+            "quantity": 10,
+            "link": "http://www.ni.com/white-paper/8115/en/",
+            "remark": null,
+            "status": null,
+            "note": "Software(License)",
+            "initials": "LSAS",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 55,
+            "isMisc": false
+          },
+          {
+            "id": "software-license-labview-software-3-year-subscription-1",
+            "title": "LabVIEW Software (3 year subscription)",
+            "group": "Software(License)",
+            "originalType": "Software(License)",
+            "quantity": 10,
+            "link": null,
+            "remark": "2023 version",
+            "status": null,
+            "note": "2023 version",
+            "initials": "LSYS",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 56,
+            "isMisc": false
+          },
+          {
+            "id": "software-license-vivado-ml-enterprise-edition-vitis-model-composer-plugin-2",
+            "title": "Vivado ML Enterprise Edition Vitis model Composer Plugin",
+            "group": "Software(License)",
+            "originalType": "Software(License)",
+            "quantity": 50,
+            "link": "https://www.xilinx.com/support/download.html",
+            "remark": "2023 version",
+            "status": null,
+            "note": "2023 version",
+            "initials": "VMEE",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 57,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "digital-communication-trainer-kits",
+        "name": "Digital communication Trainer kits",
+        "count": 9,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "digital-communication-trainer-kits-16-qam-training-systems-0",
+            "title": "16 QAM Training Systems",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 1,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "QTS",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 58,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-pam-modulation-and-demodulation-trainer-1",
+            "title": "PAM Modulation and demodulation Trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 2,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "PMDT",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 59,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-pwm-modulation-and-demodulation-trainer-2",
+            "title": "PWM modulation and demodulation Trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 2,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "PMDT",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 60,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-ppm-modulation-and-demodulation-trainer-3",
+            "title": "PPM Modulation and demodulation Trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 2,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "PMDT",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 61,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-sampling-and-reconstruction-trainer-4",
+            "title": "Sampling and reconstruction trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 6,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "SRT",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 62,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-tdm-pulse-code-modulation-transmitter-trainer-5",
+            "title": "TDM pulse code Modulation Transmitter Trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 6,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "TPCM",
+            "gradient": "linear-gradient(135deg, #5b3b7a, #362247, #211430)",
+            "sortIndex": 63,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-tdm-pulse-code-demodulation-receiver-trainer-6",
+            "title": "TDM pulse code demodulation Receiver Trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 6,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "TPCD",
+            "gradient": "linear-gradient(135deg, #145c66, #0d3940, #082328)",
+            "sortIndex": 64,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-data-formatting-and-carrier-modulation-transmitter-trainer-7",
+            "title": "Data formatting and carrier Modulation Transmitter trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 6,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "DFCM",
+            "gradient": "linear-gradient(135deg, #7a4d3a, #4a2e23, #2b1812)",
+            "sortIndex": 65,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-carrier-demodulation-and-data-reformatting-receiver-trainer-8",
+            "title": "Carrier Demodulation and data Reformatting Receiver Trainer",
+            "group": "Digital communication Trainer kits",
+            "originalType": "Digital communication Trainer kits",
+            "quantity": 6,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits",
+            "initials": "CDDR",
+            "gradient": "linear-gradient(135deg, #4b5f86, #2a3955, #172235)",
+            "sortIndex": 66,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "digital-communication-trainer-kits-accessories",
+        "name": "Digital communication Trainer kits Accessories",
+        "count": 3,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "digital-communication-trainer-kits-accessories-power-adapters-0",
+            "title": "Power Adapters",
+            "group": "Digital communication Trainer kits Accessories",
+            "originalType": "Digital communication Trainer kits Accessories",
+            "quantity": 36,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits Accessories",
+            "initials": "PA",
+            "gradient": "linear-gradient(135deg, #6b5b2f, #43391f, #27220e)",
+            "sortIndex": 67,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-accessories-mic-1",
+            "title": "Mic",
+            "group": "Digital communication Trainer kits Accessories",
+            "originalType": "Digital communication Trainer kits Accessories",
+            "quantity": 6,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits Accessories",
+            "initials": "M",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 68,
+            "isMisc": false
+          },
+          {
+            "id": "digital-communication-trainer-kits-accessories-bias-tee-zfbt-4r2gw-2",
+            "title": "Bias tee (ZFBT-4R2GW+)",
+            "group": "Digital communication Trainer kits Accessories",
+            "originalType": "Digital communication Trainer kits Accessories",
+            "quantity": 3,
+            "link": "https://www.minicircuits.com/WebStore/dashboard.html?model=ZFBT-4R2GW%2B",
+            "remark": null,
+            "status": null,
+            "note": "Digital communication Trainer kits Accessories",
+            "initials": "BTZR",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 69,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "digital-multimeters-digital-precision-multimeter-6-5-digits",
+        "name": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+        "count": 3,
+        "isMisc": false,
+        "items": [
+          {
+            "id": "digital-multimeters-digital-precision-multimeter-6-5-digits-dmm4040-0",
+            "title": "DMM4040",
+            "group": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "originalType": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "quantity": 2,
+            "link": "https://www.mouser.in/ProductDetail/Tektronix/DMM4040?qs=CrTVAl0CcnKPBUysf9dL8g%3D%3D&srsltid=AfmBOoqb57lLolMfXoGyX-5kK9KVTCBGcmAvIhy0hUGBoAlvzHAMu9si",
+            "remark": "Obsolete but working",
+            "status": null,
+            "note": "Obsolete but working",
+            "initials": "D",
+            "gradient": "linear-gradient(135deg, #213a6b, #10213a, #07111f)",
+            "sortIndex": 82,
+            "isMisc": false
+          },
+          {
+            "id": "digital-multimeters-digital-precision-multimeter-6-5-digits-untitled-resource-1",
+            "title": "Untitled resource",
+            "group": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "originalType": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "quantity": null,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "initials": "UR",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 83,
+            "isMisc": false
+          },
+          {
+            "id": "digital-multimeters-digital-precision-multimeter-6-5-digits-untitled-resource-2",
+            "title": "Untitled resource",
+            "group": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "originalType": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "quantity": null,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital Multimeters Digital Precision Multimeter 6.5 digits",
+            "initials": "UR",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 84,
+            "isMisc": false
+          }
+        ]
+      },
+      {
+        "id": "miscellaneous",
+        "name": "Miscellaneous",
+        "count": 20,
+        "isMisc": true,
+        "items": [
+          {
+            "id": "miscellaneous-power-amplifier-30mhz-6ghz-adl5544-evalz-0",
+            "title": "Power Amplifier 30MHz-6GHz (ADL5544-EVALZ)",
+            "group": "Miscellaneous",
+            "originalType": "Power amplifier",
+            "quantity": 1,
+            "link": "http://in.element14.com/analog-devices/adl5544-evalz/adl5544-eval-board/dp/2377952?searchRef=SearchLookAhead",
+            "remark": null,
+            "status": "Faulty",
+            "note": "Faulty",
+            "initials": "PAMG",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 47,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-ni-usb-6210-0",
+            "title": "NI USB-6210",
+            "group": "Miscellaneous",
+            "originalType": "DAQ device",
+            "quantity": 1,
+            "link": "http://www.ni.com/en-in/support/model.usb-6210.html",
+            "remark": null,
+            "status": null,
+            "note": "DAQ device",
+            "initials": "NU",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 48,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-thinkpad-w530-0",
+            "title": "Thinkpad W530",
+            "group": "Miscellaneous",
+            "originalType": "Laptops",
+            "quantity": 14,
+            "link": "https://www.amazon.com/Lenovo-ThinkPad-W530-243852U-Notebook/dp/B00BFFB08A",
+            "remark": null,
+            "status": null,
+            "note": "Laptops",
+            "initials": "TW",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 49,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-dell-optiplex-5000-0",
+            "title": "DELL Optiplex 5000",
+            "group": "Miscellaneous",
+            "originalType": "Desktops",
+            "quantity": 25,
+            "link": "https://www.dell.com/en-in/work/shop/business-pcs-desktop-computers/optiplex-3050-tower-small-form-factor/spd/optiplex-3050-desktop",
+            "remark": null,
+            "status": null,
+            "note": "Desktops",
+            "initials": "DO",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 50,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-keysight-s-e3631a-0",
+            "title": "Keysight's E3631A",
+            "group": "Miscellaneous",
+            "originalType": "Power Supply",
+            "quantity": 25,
+            "link": "http://literature.cdn.keysight.com/litweb/pdf/E3631-90002.pdf",
+            "remark": null,
+            "status": null,
+            "note": "Power Supply",
+            "initials": "KSE",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 51,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-keysight-s-infiniivision-dsox2002a-0",
+            "title": "Keysight's Infiniivision DSOX2002A",
+            "group": "Miscellaneous",
+            "originalType": "Digital Storage Oscillocope",
+            "quantity": 25,
+            "link": "https://www.keysight.com/en/pdx-x201827-pn-DSOX2002A/oscilloscope-70-mhz-2-analog-channels?cc=IN&lc=eng",
+            "remark": null,
+            "status": null,
+            "note": "Digital Storage Oscillocope",
+            "initials": "KSID",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 52,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-untitled-resource-1",
+            "title": "Untitled resource",
+            "group": "Miscellaneous",
+            "originalType": "Digital Storage Oscillocope",
+            "quantity": null,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital Storage Oscillocope",
+            "initials": "UR",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 53,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-u1230-series-3-5-digit-handheld-multimeters-0",
+            "title": "U1230 Series 3.5 Digit Handheld Multimeters",
+            "group": "Miscellaneous",
+            "originalType": "Digital multimeter",
+            "quantity": 25,
+            "link": "https://www.keysight.com/en/pcx-2832429/u1230-series-35-digit-handheld-multimeters?nid=-32047.0&cc=IN&lc=eng",
+            "remark": null,
+            "status": null,
+            "note": "Digital multimeter",
+            "initials": "USDH",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 54,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-advance-analog-cum-digital-trainer-kit-0",
+            "title": "Advance Analog Cum Digital Trainer Kit",
+            "group": "Miscellaneous",
+            "originalType": "Digital Trainer Kit",
+            "quantity": 30,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital Trainer Kit",
+            "initials": "AACD",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 70,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-untitled-resource-1",
+            "title": "Untitled resource",
+            "group": "Miscellaneous",
+            "originalType": "Digital Trainer Kit",
+            "quantity": null,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Digital Trainer Kit",
+            "initials": "UR",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 71,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-draginoo-s-lorawan-indoor-gateway-lps8-0",
+            "title": "Draginoo's LoRaWAN Indoor Gateway(LPS8)",
+            "group": "Miscellaneous",
+            "originalType": "LoRa Kits",
+            "quantity": 1,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "LoRa Kits",
+            "initials": "DSLI",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 72,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-dragino-s-lora-shield-for-arduino-1",
+            "title": "Dragino's LoRa Shield for Arduino",
+            "group": "Miscellaneous",
+            "originalType": "LoRa Kits",
+            "quantity": 4,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "LoRa Kits",
+            "initials": "DSLS",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 73,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-arduino-kit-r2-0",
+            "title": "Arduino Kit R2",
+            "group": "Miscellaneous",
+            "originalType": "Arduino kits",
+            "quantity": 2,
+            "link": "https://store-usa.arduino.cc/products/arduino-engineering-kit-rev2?srsltid=AfmBOor39kZV1fbxfh-3ycK5DQQR83B3t_RzvU3nrMemDUAjIiQ9Jfm4",
+            "remark": null,
+            "status": null,
+            "note": "Arduino kits",
+            "initials": "AKR",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 74,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-untitled-resource-1",
+            "title": "Untitled resource",
+            "group": "Miscellaneous",
+            "originalType": "Arduino kits",
+            "quantity": null,
+            "link": null,
+            "remark": null,
+            "status": null,
+            "note": "Arduino kits",
+            "initials": "UR",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 75,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-mso2012b-0",
+            "title": "MSO2012B",
+            "group": "Miscellaneous",
+            "originalType": "Mixed Signal Oscilloscope",
+            "quantity": 1,
+            "link": "https://www.mouser.in/ProductDetail/Tektronix/MSO2012B?qs=4EOvy6wCNnuUHnPniirKKw%3D%3D&srsltid=AfmBOootgFZ4qpf8Be0ME31zg7yY8wNA1rMTbGRlVmZcnAua1bG8-Tnb",
+            "remark": "Obsolete but working",
+            "status": null,
+            "note": "Obsolete but working",
+            "initials": "MB",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 76,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-afg-2021-0",
+            "title": "AFG 2021",
+            "group": "Miscellaneous",
+            "originalType": "Arbitrary/Function Generator",
+            "quantity": 1,
+            "link": "https://www.tek.com/en/datasheet/arbitrary-function-generator-0",
+            "remark": "Obsolete but working",
+            "status": null,
+            "note": "Obsolete but working",
+            "initials": "A",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 77,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-afg3022c-1",
+            "title": "AFG3022C",
+            "group": "Miscellaneous",
+            "originalType": "Arbitrary/Function Generator",
+            "quantity": 2,
+            "link": "https://www.mouser.in/ProductDetail/Tektronix/AFG3022C?qs=LaANLJhG4Mf7I2UuA74aVA%3D%3D&srsltid=AfmBOorZrPSocAwjRIzBdDQX9YDRy_Q_FDQ0_SY0xS7Bv_8dTXqjxcuQ",
+            "remark": "Obsolete but working",
+            "status": null,
+            "note": "Obsolete but working",
+            "initials": "AC",
+            "gradient": "linear-gradient(135deg, #6a4b2e, #412a1b, #24160f)",
+            "sortIndex": 78,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-dpo2002b-0",
+            "title": "DPO2002B",
+            "group": "Miscellaneous",
+            "originalType": "Digital Phosphor Oscillosope",
+            "quantity": 1,
+            "link": "https://www.mouser.in/ProductDetail/Tektronix/DPO2002B?qs=4EOvy6wCNnsciokiOVUL9w%3D%3D&srsltid=AfmBOooFDc0jgPiiFJYB1n97ggpk4_do6RTY63rcLDJHqaM4KaoMIWwe",
+            "remark": "Obsolete but working",
+            "status": null,
+            "note": "Obsolete but working",
+            "initials": "DB",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 79,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-pws2326-0",
+            "title": "PWS2326",
+            "group": "Miscellaneous",
+            "originalType": "Power Supplies - Bench Top",
+            "quantity": 2,
+            "link": "https://www.mouser.in/ProductDetail/Tektronix/PWS2326?qs=OVm4d%2FJVcsZ0QM4vuRV%252BdA%3D%3D&srsltid=AfmBOoqc8LsY5OANj9fUd1VZvX7pEGVSRuvtaSKeH-YsfLhM4qeFatmZ",
+            "remark": "Obsolete but working",
+            "status": null,
+            "note": "Obsolete but working",
+            "initials": "P",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 80,
+            "isMisc": true
+          },
+          {
+            "id": "miscellaneous-pws4305-0",
+            "title": "PWS4305",
+            "group": "Miscellaneous",
+            "originalType": "Power Supplies - Bench Top, Programmable",
+            "quantity": 1,
+            "link": "https://www.mouser.in/ProductDetail/Tektronix/PWS4305?qs=OVm4d%2FJVcsYvqpSp9Q64hg%3D%3D&srsltid=AfmBOoriNMIV5qNRpO8hTR16psE7GrymTV4VwPEtEdZwKzPieNdsRAFf",
+            "remark": "Obsolete but working",
+            "status": null,
+            "note": "Obsolete but working",
+            "initials": "P",
+            "gradient": "linear-gradient(135deg, #3d5a3f, #22392b, #16261d)",
+            "sortIndex": 81,
+            "isMisc": true
+          }
+        ]
+      }
+    ]
+  },
+  "courses": [
+    {
+      "title": "Antennas Theory & Design",
+      "buttons": [
+        {
+          "label": "Experiment List",
+          "link": "faq/lab.pdf",
+          "primary": true
+        },
+        {
+          "label": "Lab Handouts",
+          "link": "faq/Course.pdf",
+          "primary": false
+        },
+        {
+          "label": "Course Objectives",
+          "link": "faq/Facilities.pdf",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "title": "Algorithms to Architecture",
+      "buttons": [
+        {
+          "label": "Experiment List",
+          "link": "faq/lab.pdf",
+          "primary": true
+        },
+        {
+          "label": "Lab Handouts",
+          "link": "faq/Course.pdf",
+          "primary": false
+        },
+        {
+          "label": "Course Objectives",
+          "link": "faq/Facilities.pdf",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "title": "Robotics",
+      "buttons": [
+        {
+          "label": "Experiment List",
+          "link": "faq/lab.pdf",
+          "primary": true
+        },
+        {
+          "label": "Lab Handouts",
+          "link": "faq/Course.pdf",
+          "primary": false
+        },
+        {
+          "label": "Course Objectives",
+          "link": "faq/Facilities.pdf",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "title": "Fundamentals of Digital Communication",
+      "buttons": [
+        {
+          "label": "Experiment List",
+          "link": "faq/lab.pdf",
+          "primary": true
+        },
+        {
+          "label": "Lab Handouts",
+          "link": "faq/Course.pdf",
+          "primary": false
+        },
+        {
+          "label": "Course Objectives",
+          "link": "faq/Facilities.pdf",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "title": "ABCD",
+      "description": "",
+      "buttons": []
+    }
+  ],
+  "guidelines": [
+    {
+      "name": "LAB Guidelines",
+      "link": "policyandguidelines/lab%20guidelines.pdf"
+    },
+    {
+      "name": "TF Guidelines",
+      "link": "policyandguidelines/Facilities.pdf"
+    },
+    {
+      "name": "Student Guidelines",
+      "link": "policyandguidelines/student%20guidelines.pdf"
+    },
+    {
+      "name": "TA Guidelines",
+      "link": "policyandguidelines/Course.pdf"
+    },
+    {
+      "name": "Safety & Security",
+      "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "images/portfolio/01.jpg",
+      "alt": "Technical Events",
+      "label": "Technical Events"
+    },
+    {
+      "image": "images/portfolio/03.jpg",
+      "alt": "Workshops",
+      "label": "Workshops"
+    },
+    {
+      "image": "images/portfolio/04.jpg",
+      "alt": "TinkerHack",
+      "label": "TinkerHack"
+    },
+    {
+      "image": "images/portfolio/05.jpg",
+      "alt": "Electrivire",
+      "label": "Electrivire"
+    },
+    {
+      "image": "images/portfolio/06.jpg",
+      "alt": "HACKiT",
+      "label": "HACKiT"
+    },
+    {
+      "image": "images/portfolio/07.jpg",
+      "alt": "V2V Workshop",
+      "label": "V2V Workshop"
+    },
+    {
+      "image": "images/portfolio/08.jpg",
+      "alt": "NS3 Workshop",
+      "label": "NS3 Workshop"
+    }
+  ],
+  "projects": [
+    {
+      "date": "March 2021",
+      "title": "Touchless Tap",
+      "description": "ECE lab developed a cost-effective product to ensure safety during the Corona pandemic. The sensor-based water tap works without manual operation when it detects your hand under the nozzle. Designed and developed by Research Engineers Sana & Khagendra.",
+      "readMoreLink": "https://drive.google.com/file/d/1hBZD8eXcePdIPmQdU7vHj53eiggsQZ3R/view?usp=sharing"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Best Students",
+      "names": [
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "title": "Best Teaching Assistants",
+      "names": [
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "title": "Best Interns",
+      "names": [
+        "-",
+        "-",
+        "-"
+      ]
+    }
+  ]
+}

@@ -8,3 +8,4 @@ faiss-cpu
 python-dotenv
 pypdf
 celery[redis]
+aiofiles

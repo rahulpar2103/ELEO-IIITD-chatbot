@@ -1,0 +1,207 @@
+{
+  "settings": {
+    "galleryMax": 3,
+    "resourceMax": 6
+  },
+  "resources": [
+    {
+      "id": "ael-5g-testbed",
+      "title": "5G Standalone Testbed",
+      "category": "Wireless Testbed",
+      "subtitle": "Full 5G SA stack with core, RU, IMS, and MEC",
+      "description": "A complete 5G standalone testbed comprising the 5G core network, radio unit, IMS server, MEC server, and centralised network management system.",
+      "gradient": "linear-gradient(135deg, #1a3a5c, #0f2340, #07111f)",
+      "initials": "5G",
+      "overview": "The Advanced ECE Lab hosts a full 5G standalone testbed that enables researchers and students to experiment with end-to-end 5G communications. The setup includes the 5G core network (AMF, SMF, UPF), a radio unit, IMS for voice-over-5G services, a multi-access edge computing (MEC) server for latency-sensitive applications, and a centralised network management interface. This testbed supports research in network slicing, QoS, and edge computing.",
+      "specs": [
+        { "key": "Standard", "val": "5G SA (Standalone, 3GPP Release 15+)" },
+        { "key": "Core Functions", "val": "AMF, SMF, UPF, NRF, PCF, AUSF" },
+        { "key": "Radio Unit", "val": "OpenRAN-compatible" },
+        { "key": "MEC Server", "val": "On-premises edge compute node" },
+        { "key": "IMS", "val": "Voice and video over 5G (VoNR)" },
+        { "key": "Management", "val": "Centralised network management GUI" }
+      ],
+      "applications": [
+        "5G network slicing and QoS experiments",
+        "Edge computing latency research",
+        "Voice-over-5G (VoNR) testing",
+        "5G protocol stack analysis",
+        "Network function virtualisation experiments"
+      ]
+    },
+    {
+      "id": "ael-ris",
+      "title": "RIS / ORIS Testbed",
+      "category": "Wireless Testbed",
+      "subtitle": "Reconfigurable and Oscillating Intelligent Surface platforms",
+      "description": "Reconfigurable Intelligent Surface (RIS) and Oscillating Reconfigurable Intelligent Surface (ORIS) testbeds for smart radio environment research.",
+      "gradient": "linear-gradient(135deg, #1a4a1a, #0d2e0d, #071507)",
+      "initials": "RIS",
+      "overview": "The AEL's RIS and ORIS testbeds are research-grade platforms for studying smart electromagnetic environments. Reconfigurable Intelligent Surfaces allow passive beamforming and signal reflection control without active RF chains. The ORIS variant introduces mechanical oscillation to dynamically alter the reflection pattern. These testbeds are used in research on next-generation wireless channel control, energy-efficient communications, and beyond-5G systems.",
+      "specs": [
+        { "key": "Surface Type", "val": "Passive phase-shifting elements" },
+        { "key": "Operating Frequency", "val": "Sub-6 GHz and mmWave" },
+        { "key": "Control Interface", "val": "FPGA-based programmable controller" },
+        { "key": "ORIS Mechanism", "val": "Servo-controlled oscillating mount" },
+        { "key": "Integration", "val": "Works with 5G and SDR platforms" }
+      ],
+      "applications": [
+        "Passive beamforming and coverage extension",
+        "Smart electromagnetic environment research",
+        "Beyond-5G and 6G channel modelling",
+        "Interference nulling experiments",
+        "Energy-efficient wireless communication research"
+      ]
+    },
+    {
+      "id": "ael-d2d",
+      "title": "D2D Communication Testbed",
+      "category": "Wireless Testbed",
+      "subtitle": "Device-to-device communication platform",
+      "description": "A device-to-device (D2D) communication testbed for studying direct wireless links between user devices without traversing the base station.",
+      "gradient": "linear-gradient(135deg, #3b3000, #5a4800, #7a6000)",
+      "initials": "D2D",
+      "overview": "The D2D testbed in AEL enables research on direct device-to-device wireless communication, bypassing the cellular infrastructure for short-range, low-latency links. This is used for proximity services (ProSe), V2X (vehicle-to-vehicle) emulation, and offloading research. The testbed integrates with the 5G core for hybrid D2D-cellular research scenarios.",
+      "specs": [
+        { "key": "Communication Mode", "val": "Direct D2D and hybrid D2D-cellular" },
+        { "key": "Protocol Support", "val": "3GPP ProSe, IEEE 802.11p" },
+        { "key": "Frequency Band", "val": "Sub-6 GHz" },
+        { "key": "Latency", "val": "< 5 ms (direct mode)" },
+        { "key": "Integration", "val": "5G core and SDR compatible" }
+      ],
+      "applications": [
+        "Proximity service (ProSe) experiments",
+        "V2X emulation and vehicular network research",
+        "Cellular offloading studies",
+        "Ultra-low-latency communication research",
+        "Cooperative communication experiments"
+      ]
+    },
+    {
+      "id": "ael-workstations",
+      "title": "High-Performance Workstations",
+      "category": "Computing",
+      "subtitle": "GPU-accelerated systems for signal processing and ML",
+      "description": "High-performance desktop workstations equipped with dedicated GPUs for real-time signal processing, machine learning, and prototyping.",
+      "gradient": "linear-gradient(135deg, #3a1a4a, #220d2d, #100514)",
+      "initials": "WS",
+      "overview": "The Advanced ECE Lab has a set of high-performance workstations used for computationally intensive research tasks including MATLAB simulations, GNU Radio real-time signal processing, deep learning model training, and 5G network simulation. These machines are available to research scholars, interns, and students working on approved projects.",
+      "specs": [
+        { "key": "CPU", "val": "Intel Core i9 / AMD Ryzen 9" },
+        { "key": "RAM", "val": "32 - 64 GB DDR4" },
+        { "key": "GPU", "val": "NVIDIA RTX 3080 / A4000" },
+        { "key": "Storage", "val": "1 TB NVMe SSD + 4 TB HDD" },
+        { "key": "OS", "val": "Ubuntu 22.04 / Windows 11 dual-boot" }
+      ],
+      "applications": [
+        "MATLAB and Python signal processing simulations",
+        "GNU Radio real-time baseband experiments",
+        "Deep learning model training for wireless systems",
+        "5G network emulation and testing",
+        "Robotics and automation algorithm development"
+      ]
+    },
+    {
+      "id": "ael-sdr",
+      "title": "Software Defined Radio (SDR) Platforms",
+      "category": "Radio",
+      "subtitle": "Flexible RF platforms for waveform prototyping",
+      "description": "Software defined radio hardware for flexible waveform design, baseband prototyping, and over-the-air wireless experiments.",
+      "gradient": "linear-gradient(135deg, #4a2a1a, #2d1a0d, #150c06)",
+      "initials": "SDR",
+      "overview": "The AEL maintains a selection of SDR hardware platforms that allow researchers to implement custom waveforms, modulation schemes, and protocols in software. These platforms are used for 5G waveform prototyping, spectrum sensing, cognitive radio experiments, and channel measurement campaigns.",
+      "specs": [
+        { "key": "Platforms", "val": "USRP B210, USRP X310, LimeSDR" },
+        { "key": "Frequency Range", "val": "70 MHz to 6 GHz" },
+        { "key": "Bandwidth", "val": "Up to 160 MHz" },
+        { "key": "Interface", "val": "USB 3.0 / 10GbE" },
+        { "key": "Software", "val": "GNU Radio, OpenAirInterface, srsRAN" }
+      ],
+      "applications": [
+        "5G NR waveform prototyping",
+        "Spectrum sensing and cognitive radio research",
+        "Channel sounding and measurement",
+        "OFDM and MIMO experiments",
+        "Custom protocol development and testing"
+      ]
+    },
+    {
+      "id": "ael-fpga",
+      "title": "FPGA Development Boards",
+      "category": "Hardware Prototyping",
+      "subtitle": "Xilinx Zynq boards for real-time hardware prototyping",
+      "description": "Xilinx Zynq FPGA-SoC development boards for real-time hardware accelerated signal processing and embedded system prototyping.",
+      "gradient": "linear-gradient(135deg, #001a3a, #00102a, #00060f)",
+      "initials": "FPGA",
+      "overview": "The AEL uses Xilinx Zynq boards that combine a dual-core ARM processor with Xilinx FPGA fabric. These are used for real-time implementation of signal processing algorithms, hardware acceleration of communication baseband functions, and control plane experiments. They interface directly with SDR platforms and the 5G testbed for hardware-in-the-loop experiments.",
+      "specs": [
+        { "key": "Platform", "val": "Xilinx Zynq-7000 / ZynqMP" },
+        { "key": "FPGA Fabric", "val": "85K to 600K LUTs" },
+        { "key": "Processor", "val": "Dual ARM Cortex-A9 / A53" },
+        { "key": "Memory", "val": "512 MB to 4 GB DDR4" },
+        { "key": "Interfaces", "val": "PCIe, Ethernet, GPIO, HDMI, USB" }
+      ],
+      "applications": [
+        "Real-time DSP algorithm acceleration",
+        "Hardware-in-the-loop 5G baseband processing",
+        "RIS controller implementation",
+        "OFDM modulator/demodulator prototyping",
+        "Embedded control for robotics experiments"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Wireless Systems",
+      "description": "Research and experimental setups for modern communication systems."
+    },
+    {
+      "title": "Signal Processing",
+      "description": "Hands-on experiments and prototyping around communication and sensing."
+    },
+    {
+      "title": "Automation",
+      "description": "Support for robotics, control, and system integration projects."
+    }
+  ],
+  "guidelines": [
+    { "name": "LAB Guidelines", "link": "policyandguidelines/lab%20guidelines.pdf" },
+    { "name": "TF Guidelines", "link": "policyandguidelines/Facilities.pdf" },
+    { "name": "Student Guidelines", "link": "policyandguidelines/student%20guidelines.pdf" },
+    { "name": "TA Guidelines", "link": "policyandguidelines/Course.pdf" },
+    { "name": "Safety & Security", "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf" }
+  ],
+  "gallery": [
+    { "image": "images/gallery/ael (1).jpeg", "alt": "DC Lab", "label": "DC Lab" },
+    { "image": "images/gallery/ael (2).jpeg", "alt": "Electrivire '18", "label": "Electrivire '18" },
+    { "image": "images/gallery/ael (3).jpeg", "alt": "Electrivire '21", "label": "Electrivire '21" }
+  ],
+  "highlights": [
+    {
+      "title": "5G Testbed",
+      "names": [
+        "Standalone 5G core network",
+        "Radio unit integration",
+        "IMS & MEC server",
+        "Network management system"
+      ]
+    },
+    {
+      "title": "RIS / ORIS Setups",
+      "names": [
+        "Reconfigurable Intelligent Surfaces",
+        "D2D communication testbeds",
+        "Real-time signal processing"
+      ]
+    },
+    {
+      "title": "Research Areas",
+      "names": [
+        "Wireless communication",
+        "Signal processing",
+        "Robotics & automation",
+        "Networking"
+      ]
+    }
+  ]
+}

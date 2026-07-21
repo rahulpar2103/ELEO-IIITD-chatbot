@@ -1,0 +1,244 @@
+{
+  "settings": {
+    "galleryMax": 6,
+    "projectsMax": 3,
+    "resourceMax": 6
+  },
+  "resources": [
+    {
+      "id": "cil-osc",
+      "title": "Analog / Digital Oscilloscope",
+      "category": "Measurement",
+      "subtitle": "Waveform capture for analog and digital circuit analysis",
+      "description": "Multi-channel oscilloscopes for observing and measuring voltage waveforms in analog and digital circuits built in the CIL.",
+      "gradient": "linear-gradient(135deg, #1a3a5c, #0f2340, #07111f)",
+      "initials": "OSC",
+      "overview": "The Circuits & Innovation Lab provides both analog and digital storage oscilloscopes at student workstations. These are used throughout the semester for verifying circuit waveforms, measuring RC time constants, characterising op-amp frequency response, and debugging microcontroller outputs.",
+      "specs": [
+        { "key": "Channels", "val": "2" },
+        { "key": "Bandwidth", "val": "100 MHz" },
+        { "key": "Sample Rate", "val": "2 GSa/s" },
+        { "key": "Trigger Modes", "val": "Edge, Pulse, Video" },
+        { "key": "Memory Depth", "val": "1 Mpts" }
+      ],
+      "applications": [
+        "RC and RL circuit time-constant measurement",
+        "Op-amp frequency response analysis",
+        "PWM signal inspection from microcontrollers",
+        "Digital waveform debugging"
+      ]
+    },
+    {
+      "id": "cil-function-gen",
+      "title": "Function / Signal Generator",
+      "category": "Signal Source",
+      "subtitle": "Sine, square, and triangle waveform generation",
+      "description": "Programmable function generators used to provide test signals for analog circuit experiments and frequency response analysis.",
+      "gradient": "linear-gradient(135deg, #3b3000, #5a4800, #7a6000)",
+      "initials": "FG",
+      "overview": "The function generators in CIL allow students to generate precise sine, square, sawtooth, and triangle waveforms as inputs to circuits under test. They are frequently used for op-amp characterisation, filter design experiments, and PWM generation for motor control experiments.",
+      "specs": [
+        { "key": "Waveforms", "val": "Sine, Square, Triangle, Ramp, Pulse" },
+        { "key": "Frequency Range", "val": "0.1 Hz to 10 MHz" },
+        { "key": "Amplitude", "val": "1 mVpp to 20 Vpp" },
+        { "key": "Output Impedance", "val": "50 Ohm" },
+        { "key": "Modulation", "val": "AM, FM, PM" }
+      ],
+      "applications": [
+        "Op-amp gain and bandwidth testing",
+        "Active filter frequency response measurement",
+        "PWM generation for motor drivers",
+        "Transducer and sensor excitation"
+      ]
+    },
+    {
+      "id": "cil-arduino",
+      "title": "Arduino / Microcontroller Kits",
+      "category": "Microcontroller",
+      "subtitle": "Embedded systems and interfacing platform",
+      "description": "Arduino Uno and Mega development boards used for microcontroller-based projects involving sensors, actuators, and digital interfaces.",
+      "gradient": "linear-gradient(135deg, #1a4a1a, #0d2e0d, #071507)",
+      "initials": "MCU",
+      "overview": "The CIL maintains a set of Arduino Uno and Arduino Mega boards used for microcontroller interfacing experiments. Students use these to implement digital I/O, ADC sampling, PWM motor control, I2C and SPI sensor interfacing, and serial communication. These boards are available for issue from the component counter.",
+      "specs": [
+        { "key": "Boards Available", "val": "Arduino Uno, Arduino Mega" },
+        { "key": "MCU (Uno)", "val": "ATmega328P, 16 MHz" },
+        { "key": "Digital I/O", "val": "14 pins (Uno), 54 pins (Mega)" },
+        { "key": "Analog Inputs", "val": "6 (Uno), 16 (Mega)" },
+        { "key": "Interfaces", "val": "UART, SPI, I2C, PWM" }
+      ],
+      "applications": [
+        "Digital I/O and interrupt-driven programming",
+        "ADC-based sensor data acquisition",
+        "Motor and servo control via PWM",
+        "I2C and SPI peripheral interfacing",
+        "Serial communication with PC"
+      ]
+    },
+    {
+      "id": "cil-psu",
+      "title": "DC Regulated Power Supply",
+      "category": "Power",
+      "subtitle": "Stable dual-channel supply for circuit experiments",
+      "description": "Adjustable dual-channel DC power supplies for powering analog, digital, and microcontroller circuit experiments.",
+      "gradient": "linear-gradient(135deg, #3a1a4a, #220d2d, #100514)",
+      "initials": "PSU",
+      "overview": "CIL workstations are equipped with dual-channel regulated DC power supplies. These support both positive and negative supply rails, making them suitable for op-amp experiments requiring split supplies. They are also used for powering logic circuits, microcontroller breadboard prototypes, and motor driver modules.",
+      "specs": [
+        { "key": "Output Channels", "val": "2 independent" },
+        { "key": "Voltage Range", "val": "0 - 30 V" },
+        { "key": "Current Range", "val": "0 - 5 A" },
+        { "key": "Regulation", "val": "< 0.5% CV, < 1% CC" },
+        { "key": "Display", "val": "Dual LED V and A readout" }
+      ],
+      "applications": [
+        "Op-amp split-rail supply",
+        "Microcontroller 5V and 3.3V supply",
+        "Motor driver voltage source",
+        "Analog circuit bias supply"
+      ]
+    },
+    {
+      "id": "cil-dmm",
+      "title": "Digital Multimeter",
+      "category": "Measurement",
+      "subtitle": "Portable DMM for in-circuit measurements",
+      "description": "Handheld digital multimeters for voltage, current, resistance, and diode measurements at every student bench.",
+      "gradient": "linear-gradient(135deg, #4a2a1a, #2d1a0d, #150c06)",
+      "initials": "DMM",
+      "overview": "Each workstation in the CIL has a handheld digital multimeter for quick in-circuit measurements. These are used to verify supply voltages, measure component values before assembly, check logic levels at microcontroller pins, and troubleshoot open circuits or shorts on breadboard prototypes.",
+      "specs": [
+        { "key": "DC Voltage", "val": "0.1 mV to 1000 V" },
+        { "key": "AC Voltage", "val": "1 mV to 750 V rms" },
+        { "key": "DC Current", "val": "0.1 uA to 10 A" },
+        { "key": "Resistance", "val": "0.1 Ohm to 100 MOhm" },
+        { "key": "Diode Test", "val": "Forward voltage display" }
+      ],
+      "applications": [
+        "Supply rail verification",
+        "Component value checking",
+        "Microcontroller pin logic level measurement",
+        "Diode and transistor characterisation"
+      ]
+    },
+    {
+      "id": "cil-soldering",
+      "title": "Soldering Stations",
+      "category": "Fabrication",
+      "subtitle": "Temperature-controlled soldering for PCB assembly",
+      "description": "Temperature-controlled soldering stations for PCB fabrication and component soldering in project-based lab work.",
+      "gradient": "linear-gradient(135deg, #001a3a, #00102a, #00060f)",
+      "initials": "SOL",
+      "overview": "The CIL has a set of temperature-controlled soldering stations available for student project work. These are used for soldering through-hole and surface-mount components onto PCBs, repairing prototype boards, and assembling custom circuit modules for course projects and research work.",
+      "specs": [
+        { "key": "Temperature Range", "val": "150 - 480 degree C" },
+        { "key": "Temperature Stability", "val": "+/- 2 degree C" },
+        { "key": "Tip Type", "val": "Interchangeable chisel and conical" },
+        { "key": "ESD Safe", "val": "Yes" }
+      ],
+      "applications": [
+        "Through-hole PCB assembly",
+        "SMD component soldering",
+        "Prototype board repair",
+        "Custom connector assembly for projects"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Basic Electronics",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1etOUaacdrNXWP2wlCaZ0r30xIkXnuxYY/view", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1Hxaid6aQ19KPqZZ49uzht2rLrJSjCdgP/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1sr5Xk4qfxaGaijOFLxsv7EtuIufHcWoA/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Digital Circuits",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1U9IxB58unfGmZN8k_udLowfe_v5aabNy/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1niamOY7nkpKO41SPHtPzYxetzNkdqltN/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1T2SoVLIwILXKJofm9y_XmbA_npTzFfuR/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Integrated Electronics",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1Yb6iTbY2Q5c0uG5FSuI-HoK8Pmpg7MeU/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1SNJwRBsovidfaeOoa2My1uIICEfmVGqg/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/198LIeguA_9OXFb2W9hsSDn_BF-8u7LIa/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Circuit Theory & Devices",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/19dfQzNCEFPND8DWsB9t-iV54l68a9qMn/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/file/d/1dSlQQK_RwmOHN837WI0vCfbeu8tJygAW/view?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1csWy4efm_zF_GtUE3d8qIm0wmRnYLo7r/view?usp=sharing", "primary": false }
+      ]
+    },
+    {
+      "title": "Prototyping Interactive Systems",
+      "buttons": [
+        { "label": "Experiment List", "link": "https://drive.google.com/file/d/1Jnb_A-yG727__S6hmhmNufcq--a61oca/view?usp=sharing", "primary": true },
+        { "label": "Lab Handouts", "link": "https://drive.google.com/drive/folders/1LB2f6tqTMzbtdhStNSWtkkCfAUPtK6oK?usp=sharing", "primary": false },
+        { "label": "Course Objectives", "link": "https://drive.google.com/file/d/1qN3IZnNmjypTFMCc4MwvzCUnvsVCHKoF/view?usp=sharing", "primary": false }
+      ]
+    }
+  ],
+  "guidelines": [
+    { "name": "LAB Guidelines", "link": "policyandguidelines/lab%20guidelines.pdf" },
+    { "name": "TF Guidelines", "link": "policyandguidelines/Facilities.pdf" },
+    { "name": "Student Guidelines", "link": "policyandguidelines/student%20guidelines.pdf" },
+    { "name": "TA Guidelines", "link": "policyandguidelines/Course.pdf" },
+    { "name": "Safety & Security", "link": "policyandguidelines/Lab%20Safety%20%26%20Security.pdf" }
+  ],
+  "gallery": [
+    { "image": "images/gallery/2.jpg", "alt": "2018", "label": "2018" },
+    { "image": "images/gallery/1.jpg", "alt": "2019", "label": "2019" },
+    { "image": "images/gallery/3.jpg", "alt": "2021", "label": "2021" },
+    { "image": "images/gallery/4.jpg", "alt": "2022", "label": "2022" },
+    { "image": "images/gallery/5.jpg", "alt": "Electrivire '18", "label": "Electrivire '18" },
+    { "image": "images/gallery/6.jpg", "alt": "Electrivire '21", "label": "Electrivire '21" }
+  ],
+  "projects": [
+    {
+      "date": "March 2021",
+      "title": "Touchless Tap",
+      "description": "A cost-effective product developed to ensure safety during the Corona pandemic. The sensor-based water tap does not require manual operation and works when it detects your hand under the nozzle. Designed and developed by Research Engineers Sana & Khagendra.",
+      "readMoreLink": "https://drive.google.com/file/d/1hBZD8eXcePdIPmQdU7vHj53eiggsQZ3R/view?usp=sharing"
+    },
+    {
+      "date": "September 2022",
+      "title": "ELEO Chatbot (v1)",
+      "description": "The first version of ELEO (ECE Lab Enquiry Officer) was a simple rule-based, keyword-matching chatbot created by B.Tech student Jayan Pahuja under the guidance of Engineers Sana Ali Naqvi & Khagendra Joshi. It has since been completely replaced by the current AI-powered assistant.",
+      "readMoreLink": null
+    },
+    {
+      "date": "July 2026",
+      "title": "ELEO AI Assistant (v2)",
+      "description": "The current ELEO chatbot is a fully AI-powered assistant developed by Rahul Pardasani (M.Tech CSE 2025). It uses LLMs, a RAG pipeline, and vector search to answer lab queries dynamically.",
+      "readMoreLink": null
+    },
+    {
+      "date": "October 2022",
+      "title": "Smart File Monitoring System",
+      "description": "Coming soon.",
+      "readMoreLink": null
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Best Students",
+      "names": ["-", "-", "-", "-", "-"]
+    },
+    {
+      "title": "Best TAs - Winter 2023",
+      "names": ["Aditya Muralidharan", "Chitra Sharma", "Shikha Singh", "Adarsh Meena", "Shraddha Agarwal"]
+    },
+    {
+      "title": "Best Interns - Summer 2023",
+      "names": ["Akhil Sharma", "Shashank Shekhar Singh", "Abbas Murtaza", "Nipun Kothari"]
+    }
+  ]
+}
