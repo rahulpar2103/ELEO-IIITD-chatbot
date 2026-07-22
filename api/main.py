@@ -28,7 +28,7 @@ app.add_middleware(
         "http://localhost:8000",
         "http://127.0.0.1:8000",
     ],
-    allow_origin_regex=r"https://(.*\.)?iiitd\.ac\.in",
+    allow_origin_regex=r"https?://(.*\.)?iiitd\.(edu|ac)\.in",
     allow_methods=["GET", "POST", "PUT", "HEAD", "OPTIONS"],
     allow_headers=["Content-Type", "If-Match", "X-Content-SHA"],
     expose_headers=["ETag", "X-Content-SHA"],
