@@ -158,6 +158,22 @@
   "gallery": [
     {
       "category": "creative",
+      "image": "images/portfolio/winter school.jpg",
+      "alt": "Winter School",
+      "label": "Winter School",
+      "description": "Winter School 2025. where students collaborate on innovative electronics and embedded systems projects in a 24-hour challenge.",
+      "type": "image"
+    },
+    {
+      "category": "creative",
+      "image": "images/portfolio/summer school.jpg",
+      "alt": "Summer School",
+      "label": "Summer School",
+      "description": "Summer School 2025.",
+      "type": "image"
+    },
+    {
+      "category": "creative",
       "image": "images/portfolio/01.jpg",
       "alt": "TinkerHack",
       "label": "TinkerHack",
