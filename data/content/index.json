@@ -158,7 +158,7 @@
   "gallery": [
     {
       "category": "creative",
-      "image": "images/portfolio/winter school.jpg",
+      "image": "images/gallery/winter school.jpg",
       "alt": "Winter School",
       "label": "Winter School",
       "description": "Winter School 2025. where students collaborate on innovative electronics and embedded systems projects in a 24-hour challenge.",
@@ -166,7 +166,7 @@
     },
     {
       "category": "creative",
-      "image": "images/portfolio/summer school.jpg",
+      "image": "images/gallery/summer school.jpeg",
       "alt": "Summer School",
       "label": "Summer School",
       "description": "Summer School 2025.",
