@@ -12,24 +12,6 @@
       "type": "maintainence",
       "isNew": false,
       "date": "July 21, 2026",
-      "title": "Let Her Go",
-      "description": "Well you only need the light when its burning low,\nOnly miss the sun when it starts to snow, only know you love her when you let her go.",
-      "linkText": "",
-      "link": ""
-    },
-    {
-      "type": "maintainence",
-      "isNew": false,
-      "date": "July 21, 2026",
-      "title": "Choo lo",
-      "description": "Chhoo lo jo mujhe tum kabhi,\nKho na jaun main raat-din,\nNazaron mein tum ho base,\n",
-      "linkText": "",
-      "link": ""
-    },
-    {
-      "type": "maintainence",
-      "isNew": false,
-      "date": "July 21, 2026",
       "title": "test",
       "description": "test",
       "linkText": "",
@@ -45,19 +27,10 @@
       "link": ""
     },
     {
-      "type": "event",
-      "isNew": true,
-      "date": "July 15, 2026",
-      "title": "Waddupppp!",
-      "description": "Bleh.",
-      "linkText": "Read more",
-      "link": "#"
-    },
-    {
       "type": "update",
       "isNew": false,
       "date": "July 8, 2026",
-      "title": "Updated Issue/Return Policy â€” Effective Aug 1",
+      "title": "Updated Issue/Return Policy - Effective Aug 1",
       "description": "New component return timelines and late-fee structure have been introduced. Please review the updated policy PDF before your next checkout.",
       "linkText": "View policy",
       "link": "policyandguidelines/Issue%20return.pdf"
@@ -297,7 +270,6 @@
       "tag": "PDF Document",
       "link": "policyandguidelines/Issue%20return.pdf"
     },
-
     {
       "name": "Safety & Security",
       "tag": "PDF Document",
